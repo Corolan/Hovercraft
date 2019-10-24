@@ -2,7 +2,7 @@
 
 # Pomysły
 * Pojazd na poduszcze powietrznej
-  * Lekka rama -> styropian?
+  * Lekka rama -> styropian? materiały modelarskie
   * Poduszka -> materiałowa? Stara ortalionowa kurtka?
   * Dwa silniki do napełnienie poduszki
     * Botland: "dmuchawa wentylatorowa"
@@ -24,3 +24,6 @@
  * Zasilanie:
    * Akumulatory Li-Pol
  * Dioda oświetleniowa
+
+# Sklepy
+ * https://zabawki-modele.pl/pl/materialy-konstrukcyjne-1020
