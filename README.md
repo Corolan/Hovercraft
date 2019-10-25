@@ -20,7 +20,7 @@
  * Śmigło napędowe:
    * [Śmigło 6x4E - black - HIGH Speed - śmigło 6040E - ABC](https://abc-rc.pl/product-pol-12265-Smiglo-6x4E-black-HIGH-Speed-smiglo-6040E.html)
  * Mocowanie silnika napędowego:
-   * []()
+   * [Gimbal - jedno serwo? - ABC](https://abc-rc.pl/product-pol-1549-Gimbal-Nylon-30x30-Pan-Tilt-do-kamery-Cmos.html)
  * Sterownik silnika napędowego i dmuchawy:
    * [L298N - dwukanałowy sterownik silników - moduł 12V/2A - BOTLAND](https://botland.com.pl/pl/sterowniki-silnikow-moduly/3164-l298n-dwukanalowy-sterownik-silnikow-modul-12v2a.html?search_query=L298N+-+dwukanalowy+sterownik+silnikow+-+modul+12V%2F2&results=2)
  * Łączność:
@@ -35,6 +35,10 @@
      * [Ładowarka modelarska IMAX B3 - 2S/3S - ABC](https://abc-rc.pl/product-pol-3961-Ladowarka-modelarska-IMAX-B3-2S-3S-li-pol-zasilanie-230V.html?rec=101002101)
    * Włącznik:
      * [Przełącznik kołyskowy - ABC](https://abc-rc.pl/product-pol-12025-Przelacznik-kolyskowy-MRS102-A-C3R-15x21mm-3PIN-ON-OFF-bistabilny.html)
+   * Rzoprowadzenie napięcia
+     * []()
+   * Stabilizatory 5V 9V
+     * []()
  * Dioda oświetleniowa
      * [Lampa LED 12V 1,5W - ABC](https://abc-rc.pl/product-pol-7335-Lampa-LED-12V-1-5W-samoprzylepna-lampa-do-dronow.html)
      
