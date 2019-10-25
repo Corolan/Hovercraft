@@ -8,7 +8,7 @@
     * Botland: "dmuchawa wentylatorowa"
   * Silnik napędowy
     * Zamocowany na seromechaniźmie LUB tuż za nim ster na serwie
-  * policzyć ile pinów  będę potzrebował (Arduino MEGA?)
+  * policzyć ile pinów  będę potrzebował (Arduino MEGA?)
 
 # Części
  * Silniki poduszki powietrznej:
@@ -25,12 +25,12 @@
    * [L298N - dwukanałowy sterownik silników - moduł 12V/2A - BOTLAND](https://botland.com.pl/pl/sterowniki-silnikow-moduly/3164-l298n-dwukanalowy-sterownik-silnikow-modul-12v2a.html?search_query=L298N+-+dwukanalowy+sterownik+silnikow+-+modul+12V%2F2&results=2)
  * Łączność:
    * [Moduł Bluetooth HC-05 - ABC](https://abc-rc.pl/product-pol-6189-Bluetooth-HC-05-master-slave-modul-do-APM-i-AlexMos-Arduino.html)
-   * [Konwerter poziomów logicznych](https://abc-rc.pl/product-pol-6191-Konwerter-poziomow-3-3-5V-4-kanaly-stanow-logicznych-SPI-UART-Arduino.html)
+   * [Konwerter poziomów logicznych -ABC](https://abc-rc.pl/product-pol-6191-Konwerter-poziomow-3-3-5V-4-kanaly-stanow-logicznych-SPI-UART-Arduino.html)
  * Zasilanie:
    * Akumulator Li-Pol:
      * [Akumulator Tattu 1300mAh 3S 75C - ABC](https://abc-rc.pl/product-pol-6659-Akumulator-Tattu-1300mAh-3S-75C-Li-pol-Gens-Ace-11-1V.html)
    * Złącze do akumulatora 
-     * [Złącze XT60])(https://abc-rc.pl/product-pol-1571-Wtyki-XT60-Konektor-wtyk-i-gniazdo-wysoko-pradowe.html)
+     * [Złącze XT60](https://abc-rc.pl/product-pol-1571-Wtyki-XT60-Konektor-wtyk-i-gniazdo-wysoko-pradowe.html)
    * Ładowarka Li-Pol
      * [Ładowarka modelarska IMAX B3 - 2S/3S - ABC](https://abc-rc.pl/product-pol-3961-Ladowarka-modelarska-IMAX-B3-2S-3S-li-pol-zasilanie-230V.html?rec=101002101)
    * Włącznik:
