@@ -32,21 +32,29 @@
 * Łączność:
   * [Moduł Bluetooth HC-05 - ABC](https://abc-rc.pl/product-pol-6189-Bluetooth-HC-05-master-slave-modul-do-APM-i-AlexMos-Arduino.html)
   * [Konwerter poziomów logicznych -ABC](https://abc-rc.pl/product-pol-6191-Konwerter-poziomow-3-3-5V-4-kanaly-stanow-logicznych-SPI-UART-Arduino.html)
+* Wytrawianie płytek pcb:
+  * [Zestaw płytek - ABC](https://abc-rc.pl/product-pol-9595-Zestaw-laminatow-0-35kg-rozne-wymiary-do-budowy-plytek-PCB.html) 
+  * [Marker do rysowania ścieżek - ABC](https://abc-rc.pl/product-pol-9594-Marker-do-rysowania-sciezek-0-3mm-czarny.html?rec=101801302)
+  * [Nadsiarczan sodowy - ABC](https://abc-rc.pl/product-pol-10124-Wytrawiacz-do-plytek-drukowanych-B327-Nadsiarczan-sodowy.html)
+  * [Trzecia Ręka z Lupą - ABC](https://abc-rc.pl/product-pol-6275-Trzecia-Reka-z-Lupa-podswietlenie-LED-ZD-10MB.html)
 * Zasilanie:
-   * Akumulator Li-Pol:
-     * [Akumulator Tattu 1300mAh 3S 75C - ABC](https://abc-rc.pl/product-pol-6659-Akumulator-Tattu-1300mAh-3S-75C-Li-pol-Gens-Ace-11-1V.html)
-   * Złącze do akumulatora 
-     * [Złącze XT60](https://abc-rc.pl/product-pol-1571-Wtyki-XT60-Konektor-wtyk-i-gniazdo-wysoko-pradowe.html)
-   * Ładowarka Li-Pol
-     * [Ładowarka modelarska IMAX B3 - 2S/3S - ABC](https://abc-rc.pl/product-pol-3961-Ladowarka-modelarska-IMAX-B3-2S-3S-li-pol-zasilanie-230V.html?rec=101002101)
-   * Włącznik:
-     * [Przełącznik kołyskowy - ABC](https://abc-rc.pl/product-pol-12025-Przelacznik-kolyskowy-MRS102-A-C3R-15x21mm-3PIN-ON-OFF-bistabilny.html)
-   * Rozprowadzenie napięcia
-     * [Płytka zasilająca - ABC](https://abc-rc.pl/product-pol-4741-Plytka-zasilajaca-ESC-100A-CRIUS-v1-0-plytka-dystrybucji-pradu-do-drona.html)
-   * Stabilizatory 5V 9V
-     * [9V - BOTLAND](https://botland.com.pl/pl/regulatory-napiecia/1902-stabilizator-9v-l7809cv-tht-to220.html)
-     * [5V - BOTLAND](https://botland.com.pl/pl/regulatory-napiecia/3092-stabilizator-5v-l7805cv-tht-to220.html)
-     * [Radiatory - BOTLAND](https://botland.com.pl/pl/radiatory/1338-radiator-rad04-9x9x5-mm.html)
+  * Akumulator Li-Pol:
+    * [Akumulator Tattu 1300mAh 3S 75C - ABC](https://abc-rc.pl/product-pol-6659-Akumulator-Tattu-1300mAh-3S-75C-Li-pol-Gens-Ace-11-1V.html)
+  * Złącze do akumulatora 
+    * [Złącze XT60](https://abc-rc.pl/product-pol-1571-Wtyki-XT60-Konektor-wtyk-i-gniazdo-wysoko-pradowe.html)
+  * Ładowarka Li-Pol
+    * [Ładowarka modelarska IMAX B3 - 2S/3S - ABC](https://abc-rc.pl/product-pol-3961-Ladowarka-modelarska-IMAX-B3-2S-3S-li-pol-zasilanie-230V.html?rec=101002101)
+  * Włącznik:
+    * [Przełącznik kołyskowy - ABC](https://abc-rc.pl/product-pol-12025-Przelacznik-kolyskowy-MRS102-A-C3R-15x21mm-3PIN-ON-OFF-bistabilny.html)
+  * Rozprowadzenie napięcia
+    * [Płytka zasilająca - ABC](https://abc-rc.pl/product-pol-4741-Plytka-zasilajaca-ESC-100A-CRIUS-v1-0-plytka-dystrybucji-pradu-do-drona.html)
+  * Stabilizatory 5V 9V
+    * [9V - BOTLAND](https://botland.com.pl/pl/regulatory-napiecia/1902-stabilizator-9v-l7809cv-tht-to220.html)
+    * [5V - BOTLAND](https://botland.com.pl/pl/regulatory-napiecia/3092-stabilizator-5v-l7805cv-tht-to220.html)
+    * [Radiatory - BOTLAND](https://botland.com.pl/pl/radiatory/1338-radiator-rad04-9x9x5-mm.html)
+  * Przewody:
+    * [Przewód silikonowy miedziany ocynowany - czerwony - ABC](https://abc-rc.pl/product-pol-4851-Przewod-silikonowy-miedziany-ocynowany-20AWG-100-zyl-0-5mm2-czerwony-elastyczny.html)
+    * [Przewód silikonowy miedziany ocynowany - czarny - ABC](https://abc-rc.pl/product-pol-4852-Przewod-silikonowy-miedziany-ocynowany-20AWG-100-zyl-0-5mm2-czarny-elastyczny.html)
  * Dioda oświetleniowa
    * [Lampa LED 12V 1,5W - ABC](https://abc-rc.pl/product-pol-7335-Lampa-LED-12V-1-5W-samoprzylepna-lampa-do-dronow.html)
  * Czujniki i akcesoria do czujników:
@@ -54,17 +62,19 @@
    * [Moduł KA2284 wskaźnik poziomu naładowania baterii - ABC](https://abc-rc.pl/product-pol-7458-Modul-KA2284-wskaznik-poziomu-dzwieku-naladowania-baterii-lub-innych-parametrow.html)
    * [Wyłącznik krańcowy WK615 - dźwignia 55mm - ABC](https://abc-rc.pl/product-pol-9842-Wylacznik-krancowy-WK615-dzwignia-55mm.html)
    * [Uchwyt serwa - ABC](https://abc-rc.pl/product-pol-7542-Mocowanie-serwa-9g-SG90-ramka-plexi-36x35-srubki.html)
-   
- * INNE:  
-   * [Płytka stykowa 830 - ABC](https://abc-rc.pl/product-pol-6204-Plytka-stykowa-830-do-Arduino-MB-102-prototypowa.html)
-   * [Płytka stykowa 170 - ABC](https://abc-rc.pl/product-pol-6296-Plytka-stykowa-170-pol-SYB-170-1-szt-budowa-prototypow-Arduino.html)
-   * [Płytka stykowa 400 - ABC](https://abc-rc.pl/product-pol-6203-Plytka-stykowa-400-pol-MR200-001-uniwersalna-plytka-stykowa.html)
-   * [Podstawka plexi pod Arduino UNO - ABC](https://abc-rc.pl/product-pol-8100-Podstawka-plexi-pod-Arduino-UNO-R3-budowa-prototypow.html)
-   * [Przewody kable zworki 40 szt 20cm - żeńsko-żeńskie - ABC](https://abc-rc.pl/product-pol-8808-Przewody-kable-zworki-40-szt-20cm-zensko-zenskie.html)
-   * [Przewody kable zworki 40 szt 20cm - męsko-żeńskie - ABC](https://abc-rc.pl/product-pol-8761-Przewody-kable-zworki-40-szt-20cm-mesko-zenskie.html)
-   * [Podstawka do LCD - ABC](https://abc-rc.pl/product-pol-9790-Podstawka-do-wyswietlacza-LCD-1602-uchwyt-obudowa.html)
-   * [Karta survivalowa - ABC](https://abc-rc.pl/product-pol-8201-Karta-przezycia-SURVIVAL-CARD.html)
-   * [Moduł RFID](https://abc-rc.pl/product-pol-6410-Modul-czytnika-RFID-RC522-13-56MHz-karta-brelok-Arduino.html)
+  
+* INNE:  
+  * [Płytka stykowa 830 - ABC](https://abc-rc.pl/product-pol-6204-Plytka-stykowa-830-do-Arduino-MB-102-prototypowa.html)
+  * [Płytka stykowa 170 - ABC](https://abc-rc.pl/product-pol-6296-Plytka-stykowa-170-pol-SYB-170-1-szt-budowa-prototypow-Arduino.html)
+  * [Płytka stykowa 400 - ABC](https://abc-rc.pl/product-pol-6203-Plytka-stykowa-400-pol-MR200-001-uniwersalna-plytka-stykowa.html)
+  * [Podstawka plexi pod Arduino UNO - ABC](https://abc-rc.pl/product-pol-8100-Podstawka-plexi-pod-Arduino-UNO-R3-budowa-prototypow.html)
+  * [Przewody kable zworki 40 szt 20cm - żeńsko-żeńskie - ABC](https://abc-rc.pl/product-pol-8808-Przewody-kable-zworki-40-szt-20cm-zensko-zenskie.html)
+  * [Przewody kable zworki 40 szt 20cm - męsko-żeńskie - ABC](https://abc-rc.pl/product-pol-8761-Przewody-kable-zworki-40-szt-20cm-mesko-zenskie.html)
+  * [Podstawka do LCD - ABC](https://abc-rc.pl/product-pol-9790-Podstawka-do-wyswietlacza-LCD-1602-uchwyt-obudowa.html)
+  * [Karta survivalowa - ABC](https://abc-rc.pl/product-pol-8201-Karta-przezycia-SURVIVAL-CARD.html)
+  * [Moduł RFID](https://abc-rc.pl/product-pol-6410-Modul-czytnika-RFID-RC522-13-56MHz-karta-brelok-Arduino.html)
+  * [Listwa goldpin prosta - ABC](https://abc-rc.pl/product-pol-6349-Listwa-kolkowa-2-54mm-40-pinow-10-szt-goldpin-do-ukladow-elektronicznych.html)
+  * [Listwa goldpin kątowa - ABC](https://abc-rc.pl/product-pol-5433-Listwa-kolkowa-2-54mm-katowa-20-pinow-10-szt-goldpin-do-ukladow-elektronicznych.html)
 
 
 
