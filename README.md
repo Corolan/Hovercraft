@@ -8,30 +8,31 @@
   * Jeden/Dwa silniki do napełnienie poduszki -> Kanały sterownika (dwie dmuchawy sterowane jednym sygnałem?)
   * Silnik napędowy
     * Zamocowany na seromechaniźmie
-  * policzyć ile pinów  będę potrzebował (Arduino MEGA?)
+  * czy dodawać fotorezystory?
+  * Dodać LED 5V wskazujący uruchomienie?
 
-* Liczba pinów sterujących:
-  * Silniki: 2 silniki x 3 piny = 6 pinów (4 cyfrowe + 2 PWM)
+## Liczba potzrebnych pinów sterujących mikrokontrolera:
+  * Silniki: 2 silniki x 3 piny = 6 pinów (4 cyfrowe + 2 PWM) (dmuchawy sterowane jednym sygnałem)
   * Serwo: 1 pin PWM
   * Moduł Bluetooth: 2 piny cyfrowe
   * LED: 1 pin cyfrowy
   * Czujnik HC-SR04: 2 piny cyfrowe
   * Krańcówki: 4 piny cyfrowe
-  * RFID: ewentualnie 4 piny cyfrowe
+  * Opcjonalnie: RFID: 4 piny cyfrowe
     * Razem: 3 piny PWM oraz 13 pinów cyfrowych - WYSTARCZY
 
 ## Do zrobienia
-- [] Określić ramy czasowe
+- [ ] Określić ramy czasowe
 - [x] Lista części
-- [] Wstępny schemat
-- [] Projekt obwodu zasilania
-- [] Zakup części
-- [] Projekt konstrukcji głównej
-- [] Projekt obwodów czujników
-- [] Zaplanować rozłożenie rzeczywiste elementów konstrukcji 
-  - [] Zapewnić prawidłowe wyważenie konstrukcji
-- [] Napisać oprogramowanie sterujące pojazdem
-- [] Przygotować aplikację Androidową ontrolującą pojazd
+- [ ] Wstępny schemat
+  - [ ] Projekt obwodu zasilania
+  - [ ] Projekt obwodu czujników
+- [ ] Zakup części
+- [ ] Projekt konstrukcji głównej
+  - [ ] Zaplanować rozłożenie rzeczywiste elementów konstrukcji 
+  -  [ ] Zapewnić prawidłowe wyważenie konstrukcji
+- [ ] Napisać oprogramowanie sterujące pojazdem
+- [ ] Przygotować aplikację Androidową kontrolującą pojazd
 
 
 ## Części
@@ -72,9 +73,10 @@
     * [Przełącznik kołyskowy - ABC](https://abc-rc.pl/product-pol-12025-Przelacznik-kolyskowy-MRS102-A-C3R-15x21mm-3PIN-ON-OFF-bistabilny.html)
   * Rozprowadzenie napięcia
     * [Płytka zasilająca - ABC](https://abc-rc.pl/product-pol-4741-Plytka-zasilajaca-ESC-100A-CRIUS-v1-0-plytka-dystrybucji-pradu-do-drona.html)
-  * Stabilizatory 5V 9V
+  * Stabilizatory 5V 9V 3.3V
     * [9V - BOTLAND](https://botland.com.pl/pl/regulatory-napiecia/1902-stabilizator-9v-l7809cv-tht-to220.html)
     * [5V - BOTLAND](https://botland.com.pl/pl/regulatory-napiecia/3092-stabilizator-5v-l7805cv-tht-to220.html)
+    * [3.3V -BOTLAND](https://botland.com.pl/pl/regulatory-napiecia/7685-stabilizator-ldo-33v-ld1117v33-tht-to220.html)
     * [Radiatory - BOTLAND](https://botland.com.pl/pl/radiatory/1338-radiator-rad04-9x9x5-mm.html)
   * Przewody:
     * [Przewód silikonowy miedziany ocynowany - czerwony - ABC](https://abc-rc.pl/product-pol-4851-Przewod-silikonowy-miedziany-ocynowany-20AWG-100-zyl-0-5mm2-czerwony-elastyczny.html)
