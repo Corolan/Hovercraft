@@ -2,13 +2,37 @@
 
 ## Pomysły i uwagi
 * Pojazd na poduszcze powietrznej
-  * Lekka rama -> styropian? materiały modelarskie
+  * Lekka rama -> balsa
+    * Dwa poziomy: pokład głownu i podpokład z elektroniką - ciąg powietrza zapewni chłodzenie
   * Poduszka -> materiałowa? Stara ortalionowa kurtka?
-  * Dwa silniki do napełnienie poduszki
-    * Botland: "dmuchawa wentylatorowa"
+  * Jeden/Dwa silniki do napełnienie poduszki -> Kanały sterownika (dwie dmuchawy sterowane jednym sygnałem?)
   * Silnik napędowy
-    * Zamocowany na seromechaniźmie LUB tuż za nim ster na serwie
+    * Zamocowany na seromechaniźmie
   * policzyć ile pinów  będę potrzebował (Arduino MEGA?)
+
+* Liczba pinów sterujących:
+  * Silniki: 2 silniki x 3 piny = 6 pinów (4 cyfrowe + 2 PWM)
+  * Serwo: 1 pin PWM
+  * Moduł Bluetooth: 2 piny cyfrowe
+  * LED: 1 pin cyfrowy
+  * Czujnik HC-SR04: 2 piny cyfrowe
+  * Krańcówki: 4 piny cyfrowe
+  * RFID: ewentualnie 4 piny cyfrowe
+    * Razem: 3 piny PWM oraz 13 pinów cyfrowych - WYSTARCZY
+
+## Do zrobienia
+[] Określić ramy czasowe
+[x] Lista części
+[] Wstępny schemat
+[] Projekt obwodu zasilania
+[] Zakup części
+[] Projekt konstrukcji głównej
+[] Projekt obwodów czujników
+[] Zaplanować rozłożenie rzeczywiste elementów konstrukcji 
+   [] Zapewnić prawidłowe wyważenie konstrukcji
+[] Napisać oprogramowanie sterujące pojazdem
+[] Przygotować aplikację Androidową ontrolującą pojazd
+
 
 ## Części
 * Mechanika:
@@ -57,9 +81,10 @@
     * [Przewód silikonowy miedziany ocynowany - czarny - ABC](https://abc-rc.pl/product-pol-4852-Przewod-silikonowy-miedziany-ocynowany-20AWG-100-zyl-0-5mm2-czarny-elastyczny.html)
  * Dioda oświetleniowa
    * [Lampa LED 12V 1,5W - ABC](https://abc-rc.pl/product-pol-7335-Lampa-LED-12V-1-5W-samoprzylepna-lampa-do-dronow.html)
+   * [Moduł przekaźnika - ABC](https://abc-rc.pl/product-pol-12107-Modul-przekaznika-1-kanal-5V-10A-250V-modul-przekaznikowy.html)
  * Czujniki i akcesoria do czujników:
    * [Uchwyt czujnika HC-SR04 - ABC](https://abc-rc.pl/product-pol-7320-Uchwyt-czujnika-HC-SR04-mocowanie-czujnika-SR04.html)
-   * [Moduł KA2284 wskaźnik poziomu naładowania baterii - ABC](https://abc-rc.pl/product-pol-7458-Modul-KA2284-wskaznik-poziomu-dzwieku-naladowania-baterii-lub-innych-parametrow.html)
+   * [Woltomierz - ABC](https://abc-rc.pl/product-pol-6306-Woltomierz-DC-3-30V-0-36-LED-czerwony-bez-obudowy.html)
    * [Wyłącznik krańcowy WK615 - dźwignia 55mm - ABC](https://abc-rc.pl/product-pol-9842-Wylacznik-krancowy-WK615-dzwignia-55mm.html)
    * [Uchwyt serwa - ABC](https://abc-rc.pl/product-pol-7542-Mocowanie-serwa-9g-SG90-ramka-plexi-36x35-srubki.html)
   
@@ -77,10 +102,4 @@
   * [Listwa goldpin kątowa - ABC](https://abc-rc.pl/product-pol-5433-Listwa-kolkowa-2-54mm-katowa-20-pinow-10-szt-goldpin-do-ukladow-elektronicznych.html)
 
 
-
-
-
- * Drobnica:
-   * piny goldpin
-   * przycisk kołyskowy
 
