@@ -21,17 +21,17 @@
     * Razem: 3 piny PWM oraz 13 pinów cyfrowych - WYSTARCZY
 
 ## Do zrobienia
-[] Określić ramy czasowe
-[x] Lista części
-[] Wstępny schemat
-[] Projekt obwodu zasilania
-[] Zakup części
-[] Projekt konstrukcji głównej
-[] Projekt obwodów czujników
-[] Zaplanować rozłożenie rzeczywiste elementów konstrukcji 
-   [] Zapewnić prawidłowe wyważenie konstrukcji
-[] Napisać oprogramowanie sterujące pojazdem
-[] Przygotować aplikację Androidową ontrolującą pojazd
+- [] Określić ramy czasowe
+- [x] Lista części
+- [] Wstępny schemat
+- [] Projekt obwodu zasilania
+- [] Zakup części
+- [] Projekt konstrukcji głównej
+- [] Projekt obwodów czujników
+- [] Zaplanować rozłożenie rzeczywiste elementów konstrukcji 
+  - [] Zapewnić prawidłowe wyważenie konstrukcji
+- [] Napisać oprogramowanie sterujące pojazdem
+- [] Przygotować aplikację Androidową ontrolującą pojazd
 
 
 ## Części
