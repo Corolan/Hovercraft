@@ -10,6 +10,8 @@
     * Zamocowany na seromechaniźmie
   * czy dodawać fotorezystory?
   * Dodać LED 5V wskazujący uruchomienie?
+  * Kondensatory przy stabilizatorach!!!
+  
 
 ## Liczba potrzebnych pinów sterujących mikrokontrolera:
   * Silniki: 2 silniki x 3 piny = 6 pinów (4 cyfrowe + 2 PWM) (dmuchawy sterowane jednym sygnałem)
@@ -89,6 +91,10 @@
    * [Woltomierz - ABC](https://abc-rc.pl/product-pol-6306-Woltomierz-DC-3-30V-0-36-LED-czerwony-bez-obudowy.html)
    * [Wyłącznik krańcowy WK615 - dźwignia 55mm - ABC](https://abc-rc.pl/product-pol-9842-Wylacznik-krancowy-WK615-dzwignia-55mm.html)
    * [Uchwyt serwa - ABC](https://abc-rc.pl/product-pol-7542-Mocowanie-serwa-9g-SG90-ramka-plexi-36x35-srubki.html)
+
+* Narzędzia
+  * [Pistolet do kleju na gorąco - ABC](https://abc-rc.pl/product-pol-11945-Pistolet-do-kleju-na-goraco-110-240V-40W-Glue-Gun.html)
+  * [Klej - ABC](https://abc-rc.pl/product-pol-11946-Klej-do-pistoletu-na-goraco-16x1-1cm-klej-do-klejenia-na-goraco-przezroczysty.html)
   
 * INNE:  
   * [Płytka stykowa 830 - ABC](https://abc-rc.pl/product-pol-6204-Plytka-stykowa-830-do-Arduino-MB-102-prototypowa.html)

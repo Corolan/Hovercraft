@@ -1,6 +1,6 @@
 Szanowny Panie Doktorze,
 Pomysł z poduszkowcem jakoś szczególnie utkwił mi w głowie i zacząłem się nad tym głebiej zastanawiać.
-Poniżej zamieszczam efekty tych przemyśleń. Wybrałem wstępną listę części, które, wydaje mi się, byłyby odpowiednie do tego projektu. Mam kilka przemyśleń na temat konstrukcji mechanicznej oraz elektrycznej modułu. Załączam również wstępny schemat urządzeń.
+Poniżej zamieszczam efekty tych przemyśleń. Wybrałem wstępną listę części, które, wydaje mi się, byłyby odpowiednie do tego projektu. Mam kilka przemyśleń na temat konstrukcji mechanicznej oraz elektrycznej modułu. Załączam również wstępny schemat urządzeń (bardzo wstępny, nie uwzględniłem na nim póki co chociażby kondensatorów przy stabilizatorach).
 
 Czy taki projekt ma rację bytu?
 
@@ -15,6 +15,7 @@ Czy taki projekt ma rację bytu?
   * Woltomierz przy akumulatorach -> kontrola rozładowania ogniw
   * Łączność za pomocą modułu Bluetooth - łatwość nadawania/odbierania danych, względna prostota zbudowania aplikacji mobilnej do zdalnego sterowania
   * Do głownej linii zasilania podłączyć woltomierz by na bierząco sprawdzać napięcie na akumulatorze -> zapobieganie nadmiernemu rozładowaniu
+  * Dołozyć wyświetlacz tekstowy LCD -> do debugu lub wyświetlania danych?
 
 
 ## Komentarz
@@ -31,10 +32,8 @@ Czy taki projekt ma rację bytu?
 * Mechanika:
   * Konstrukcja kadłuba
     * [Balsa - ABC](https://abc-rc.pl/product-pol-2139-Balsa-Modelarska-3-0-mm-srednia-I-klasa.html)
-  * Dystanse
-    * [Tuleje dystansowe - ABC](https://abc-rc.pl/product-pol-7191-Zestaw-180-sztuk-Srub-i-Tulei-Dystansowych-M3-6-8-10-12-15-20-mm-Poliamid.html)
 
-* Napęd:    
+* Napęd:
   * Silniki poduszki powietrznej:
     * [Dmuchawa wentylatorowa 12V 4,2W - BOTLAND](https://botland.com.pl/pl/pompy/8875-dmuchawa-wentylatorowa-12v-42w-97x97x33mm.html?search_query=Dmuchawa+wentylatorowa+12V+4%2C2W&results=1)
   * Silnik napędowy:
