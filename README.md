@@ -11,7 +11,7 @@
   * czy dodawać fotorezystory?
   * Dodać LED 5V wskazujący uruchomienie?
 
-## Liczba potzrebnych pinów sterujących mikrokontrolera:
+## Liczba potrzebnych pinów sterujących mikrokontrolera:
   * Silniki: 2 silniki x 3 piny = 6 pinów (4 cyfrowe + 2 PWM) (dmuchawy sterowane jednym sygnałem)
   * Serwo: 1 pin PWM
   * Moduł Bluetooth: 2 piny cyfrowe
@@ -32,7 +32,7 @@
   - [ ] Zaplanować rozłożenie rzeczywiste elementów konstrukcji 
   -  [ ] Zapewnić prawidłowe wyważenie konstrukcji
 - [ ] Napisać oprogramowanie sterujące pojazdem
-- [ ] Przygotować aplikację Androidową kontrolującą pojazd
+  - [ ] Przygotować aplikację Androidową kontrolującą pojazd
 
 
 ## Części
