@@ -6,6 +6,7 @@
 \usepackage{lmodern}
 \usepackage{graphicx}
 \usepackage{subfiles}
+\usepackage[nottoc]{tocbibind}
 \selectlanguage{polish}
 
 \begin{document}
@@ -30,18 +31,21 @@ Hello World!
 \subfile{./rozdzialy/rozdzial1.tex} 
 \chapter{Mikrokontroler Arduino}
 \subfile{rozdzialy/rozdzial2.tex}
-\chapter{Komponenty}
-Są drogie.
-\chapter{Budowa}
+\chapter{Konstrukcja urządzenia}
+\subfile{rozdzialy/rozdzial3.tex}
+\chapter{Proces budowy}
 Trwa długo... Ale mam już schemat!
-\chapter{Zasilanie}
-Jest potrzebne.
-\chapter{Sterowanie}
+\chapter{Program sterujący}
 Bo ściany.
 \chapter{Komunikacja bezprzewodowa}
 Bluetooth.
+\chapter{Test}
+Wszystko działa!
+\chapter*{Podsumowanie}
+\addcontentsline{toc}{chapter}{Podsumowanie}
 
-\chapter{Spisy}
+\addtocontents{toc}{\protect\vspace{20pt}}
+
 \listoffigures
 \listoftables
 

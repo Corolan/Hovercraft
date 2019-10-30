@@ -3,9 +3,13 @@
 \contentsline {chapter}{Wst\IeC {\k e}p}{1}
 \contentsline {chapter}{\numberline {1}Teoria zagadnienia}{2}
 \contentsline {chapter}{\numberline {2}Mikrokontroler Arduino}{4}
-\contentsline {chapter}{\numberline {3}Komponenty}{5}
-\contentsline {chapter}{\numberline {4}Budowa}{6}
-\contentsline {chapter}{\numberline {5}Zasilanie}{7}
-\contentsline {chapter}{\numberline {6}Sterowanie}{8}
-\contentsline {chapter}{\numberline {7}Komunikacja bezprzewodowa}{9}
-\contentsline {chapter}{\numberline {8}Spisy}{10}
+\contentsline {chapter}{\numberline {3}Konstrukcja urz\IeC {\k a}dzenia}{5}
+\contentsline {chapter}{\numberline {4}Proces budowy}{6}
+\contentsline {chapter}{\numberline {5}Program steruj\IeC {\k a}cy}{7}
+\contentsline {chapter}{\numberline {6}Komunikacja bezprzewodowa}{8}
+\contentsline {chapter}{\numberline {7}Test}{9}
+\contentsline {chapter}{Podsumowanie}{10}
+\vspace {20pt}
+\contentsline {chapter}{Spis rysunk\'ow}{11}
+\contentsline {chapter}{Spis tablic}{12}
+\contentsline {chapter}{Bibliografia}{13}
