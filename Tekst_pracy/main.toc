@@ -1,0 +1,11 @@
+\select@language {polish}
+\select@language {polish}
+\contentsline {chapter}{Wst\IeC {\k e}p}{1}
+\contentsline {chapter}{\numberline {1}Teoria zagadnienia}{2}
+\contentsline {chapter}{\numberline {2}Mikrokontroler Arduino}{4}
+\contentsline {chapter}{\numberline {3}Komponenty}{5}
+\contentsline {chapter}{\numberline {4}Budowa}{6}
+\contentsline {chapter}{\numberline {5}Zasilanie}{7}
+\contentsline {chapter}{\numberline {6}Sterowanie}{8}
+\contentsline {chapter}{\numberline {7}Komunikacja bezprzewodowa}{9}
+\contentsline {chapter}{\numberline {8}Spisy}{10}

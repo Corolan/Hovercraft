@@ -1,0 +1,52 @@
+\documentclass[a4paper, 12pt]{report}
+
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{subfiles}
+\selectlanguage{polish}
+
+\begin{document}
+\title{Praca magisterska}
+\date{2019-10-25}
+\author{Piotr Gajcy}
+
+  \pagenumbering{gobble}
+  \maketitle
+  \newpage
+  \pagenumbering{arabic}
+  \pagenumbering{roman}
+  \tableofcontents
+  \newpage
+  \pagenumbering{arabic}
+  
+\chapter*{Wstęp}
+\addcontentsline{toc}{chapter}{Wstęp}
+Hello World!
+
+\chapter{Teoria zagadnienia}
+\subfile{./rozdzialy/rozdzial1.tex} 
+\chapter{Mikrokontroler Arduino}
+\subfile{rozdzialy/rozdzial2.tex}
+\chapter{Komponenty}
+Są drogie.
+\chapter{Budowa}
+Trwa długo... Ale mam już schemat!
+\chapter{Zasilanie}
+Jest potrzebne.
+\chapter{Sterowanie}
+Bo ściany.
+\chapter{Komunikacja bezprzewodowa}
+Bluetooth.
+
+\chapter{Spisy}
+\listoffigures
+\listoftables
+
+\bibliographystyle{plain}
+\bibliography{bibliografia}
+
+
+\end{document}

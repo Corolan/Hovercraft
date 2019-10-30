@@ -14,11 +14,12 @@ Czy taki projekt ma rację bytu?
     * Zamocowany na seromechaniźmie -> ster kierunku
   * Woltomierz przy akumulatorach -> kontrola rozładowania ogniw
   * Łączność za pomocą modułu Bluetooth - łatwość nadawania/odbierania danych, względna prostota zbudowania aplikacji mobilnej do zdalnego sterowania
+  * Do głownej linii zasilania podłączyć woltomierz by na bierząco sprawdzać napięcie na akumulatorze -> zapobieganie nadmiernemu rozładowaniu
 
 
 ## Komentarz
   * W fazie prototypu układ będzie oczywiście złożony na płytce prototypowej, ale do realizacji myślę że warto byłoby przygotować płytki PCB (ponieważ będą to stosunkowo proste układy, mógłbym wytrawić płytki własnoręcznie)
-  * Można by dodać fotorezystory na dwóch stronach pojazdu -> funkcja podążania za śwaitłem?
+  * Można by dodać fotorezystory na dwóch stronach pojazdu -> funkcja podążania za światłem?
   * Dodać wskaźnik załączenia prądu (LED 5V przy zasilaniu?).
   * Czy wybrane śmigło zapewni wystarczający ciąg poziomy?
   * Czy dmuchawy zapewnią wystarczający ciąg pionowy?
