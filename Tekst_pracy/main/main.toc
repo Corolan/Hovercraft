@@ -1,0 +1,36 @@
+\select@language {polish}
+\select@language {polish}
+\contentsline {chapter}{Wst\IeC {\k e}p}{1}
+\contentsline {chapter}{\numberline {1}Teoria zagadnienia}{3}
+\contentsline {section}{\numberline {1.1}Historia poduszkowc\IeC {\'o}w}{3}
+\contentsline {section}{\numberline {1.2}Teoria ruchu poduszkowca}{3}
+\contentsline {subsection}{\numberline {1.2.1}Ci\IeC {\k a}g pionowy}{3}
+\contentsline {subsection}{\numberline {1.2.2}Nap\IeC {\k e}d}{3}
+\contentsline {chapter}{\numberline {2}Model poduszkowca}{5}
+\contentsline {chapter}{\numberline {3}Konstrukcja urz\IeC {\k a}dzenia}{7}
+\contentsline {section}{\numberline {3.1}Schemat konstrukcji mechanicznej}{7}
+\contentsline {section}{\numberline {3.2}Schemat elektroniczny}{7}
+\contentsline {section}{\numberline {3.3}Komponenty}{7}
+\contentsline {subsection}{\numberline {3.3.1}Nap\IeC {\k e}d}{7}
+\contentsline {subsection}{\numberline {3.3.2}Ster kierunku}{7}
+\contentsline {subsection}{\numberline {3.3.3}Sterownik silnik\IeC {\'o}w}{7}
+\contentsline {subsection}{\numberline {3.3.4}Mikrokontroler}{8}
+\contentsline {subsection}{\numberline {3.3.5}modu\IeC {\l } Bluetooth}{8}
+\contentsline {subsection}{\numberline {3.3.6}Czujnik odleg\IeC {\l }o\IeC {\'s}ci}{8}
+\contentsline {subsection}{\numberline {3.3.7}Detekcja przeszk\IeC {\'o}d}{8}
+\contentsline {subsection}{\numberline {3.3.8}Inne}{8}
+\contentsline {subsubsection}{LED}{8}
+\contentsline {subsubsection}{Konwerter 5V-3.3V}{8}
+\contentsline {subsection}{\numberline {3.3.9}Zasilanie}{8}
+\contentsline {section}{\numberline {3.4}Monta\IeC {\.z} konstrukcji mechanicznej}{8}
+\contentsline {section}{\numberline {3.5}Monta\IeC {\.z} podzespo\IeC {\l }\IeC {\'o}w elektronicznych}{8}
+\contentsline {subsubsection}{Prototyp}{8}
+\contentsline {subsubsection}{P\IeC {\l }ytka PCB}{9}
+\contentsline {section}{\numberline {3.6}Gotowy model}{9}
+\contentsline {chapter}{\numberline {4}Program steruj\IeC {\k a}cy}{11}
+\contentsline {chapter}{\numberline {5}Komunikacja bezprzewodowa}{13}
+\contentsline {chapter}{\numberline {6}Testy urz\IeC {\k a}dzenia}{15}
+\contentsline {chapter}{Podsumowanie}{17}
+\vspace {20pt}
+\contentsline {chapter}{Spis rysunk\'ow}{19}
+\contentsline {chapter}{Spis tablic}{21}

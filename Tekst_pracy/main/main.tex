@@ -1,13 +1,13 @@
-\documentclass[a4paper, 12pt]{report}
+\documentclass[a4paper, 12pt, twoside, openright]{report}
 
 \usepackage[T1]{fontenc}
 \usepackage[polish]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
 \usepackage{graphicx}
-\usepackage{subfiles}
 \usepackage[nottoc]{tocbibind}
 \selectlanguage{polish}
+\usepackage{subfiles}
 
 \begin{document}
 \title{Praca magisterska}
@@ -28,18 +28,16 @@
 Hello World!
 
 \chapter{Teoria zagadnienia}
-\subfile{./rozdzialy/rozdzial1.tex} 
-\chapter{Mikrokontroler Arduino}
-\subfile{rozdzialy/rozdzial2.tex}
+\subfile{../rozdzialy/rozdzial1.tex} 
+\chapter{Model poduszkowca}
+\subfile{../rozdzialy/rozdzial2.tex}
 \chapter{Konstrukcja urządzenia}
-\subfile{rozdzialy/rozdzial3.tex}
-\chapter{Proces budowy}
-Trwa długo... Ale mam już schemat!
+\subfile{../rozdzialy/rozdzial3.tex}
 \chapter{Program sterujący}
 Bo ściany.
 \chapter{Komunikacja bezprzewodowa}
 Bluetooth.
-\chapter{Test}
+\chapter{Testy urządzenia}
 Wszystko działa!
 \chapter*{Podsumowanie}
 \addcontentsline{toc}{chapter}{Podsumowanie}
