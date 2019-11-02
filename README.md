@@ -10,7 +10,6 @@
     * Zamocowany na seromechaniźmie
   * czy dodawać fotorezystory?
   * Dodać LED 5V wskazujący uruchomienie?
-  * Kondensatory przy stabilizatorach!!!
   
 
 ## Liczba potrzebnych pinów sterujących mikrokontrolera:
@@ -26,9 +25,9 @@
 ## Do zrobienia
 - [ ] Określić ramy czasowe
 - [x] Lista części
-- [ ] Wstępny schemat
-  - [ ] Projekt obwodu zasilania
-  - [ ] Projekt obwodu czujników
+- [x] Wstępny schemat
+  - [x] Projekt obwodu zasilania
+  - [x] Projekt obwodu czujników
 - [ ] Zakup części
 - [ ] Projekt konstrukcji głównej
   - [ ] Zaplanować rozłożenie rzeczywiste elementów konstrukcji 
@@ -97,6 +96,10 @@
   * [Klej - ABC](https://abc-rc.pl/product-pol-11946-Klej-do-pistoletu-na-goraco-16x1-1cm-klej-do-klejenia-na-goraco-przezroczysty.html)
   
 * INNE:  
+  * [Złącza ARK 2 pin - ABC](https://abc-rc.pl/product-pol-11824-Zlacze-ARK-2PIN-raster-5mm-do-zalutowania-druku-10szt.html)
+  * [Złącze kołkowe 4 piny - ABC](https://abc-rc.pl/product-pol-5430-Gniazdo-kolkowe-2-54mm-4-piny-10-szt-zenskie-do-ukladow-elektronicznych.html?rec=101002206)
+  * [Złącze kołkowe 2 piny - ABC](https://abc-rc.pl/product-pol-5428-Gniazdo-kolkowe-2-54mm-2-piny-10-szt-zenskie-do-ukladow-elektronicznych.html?rec=101002203)
+  * []()
   * [Płytka stykowa 830 - ABC](https://abc-rc.pl/product-pol-6204-Plytka-stykowa-830-do-Arduino-MB-102-prototypowa.html)
   * [Płytka stykowa 170 - ABC](https://abc-rc.pl/product-pol-6296-Plytka-stykowa-170-pol-SYB-170-1-szt-budowa-prototypow-Arduino.html)
   * [Płytka stykowa 400 - ABC](https://abc-rc.pl/product-pol-6203-Plytka-stykowa-400-pol-MR200-001-uniwersalna-plytka-stykowa.html)
