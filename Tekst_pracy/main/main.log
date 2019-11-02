@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.10.28)  1 NOV 2019 21:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.10.28)  2 NOV 2019 18:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -24,6 +24,37 @@ File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count88
+\Gm@cntv=\count89
+\c@Gm@tempcnt=\count90
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks15
+)
 (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
@@ -31,6 +62,16 @@ Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hyphsubst.sty
+Package: hyphsubst 2008/06/09 v0.2 Substitute hyphenation patterns (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+Package hyphsubst Info: Redefined: \l@polish
+(hyphsubst)             old value: 3
+(hyphsubst)             new value: 2 on input line 223.
+)
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2016/02/24 3.9q The Babel package
 
@@ -39,19 +80,19 @@ Language: polish 2005/03/31 v1.2l Polish support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2016/02/24 3.9q Babel common definitions
-\babel@savecnt=\count88
-\U@D=\dimen103
+\babel@savecnt=\count91
+\U@D=\dimen111
 )
 Package babel Info: Making " an active character on input line 83.
-\pl@left=\dimen104
-\pl@down=\dimen105
-\pl@right=\dimen106
-\pl@temp=\dimen107
+\pl@left=\dimen112
+\pl@down=\dimen113
+\pl@right=\dimen114
+\pl@temp=\dimen115
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
-\inpenc@prehook=\toks14
-\inpenc@posthook=\toks15
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2015/12/03 v1.1r UTF-8 support for inputenc
@@ -396,10 +437,6 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks16
-)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
 
@@ -414,16 +451,13 @@ Package graphics Info: Driver file: pdftex.def on input line 95.
 (/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-)
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count89
+\Gread@gobject=\count92
 ))
-\Gin@req@height=\dimen108
-\Gin@req@width=\dimen109
+\Gin@req@height=\dimen116
+\Gin@req@width=\dimen117
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tocbibind/tocbibind.sty
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
@@ -437,42 +471,76 @@ Package: subfiles 2012/05/23 Federico Garcia
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks17
-\verbatim@line=\toks18
+\every@verbatim=\toks18
+\verbatim@line=\toks19
 \verbatim@in@stream=\read1
 )) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 12.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 19.
 
 (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=731.23584pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-52.36449pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=85.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count90
-\scratchdimen=\dimen110
+\scratchcounter=\count93
+\scratchdimen=\dimen118
 \scratchbox=\box26
-\nofMPsegments=\count91
-\nofMParguments=\count92
-\everyMPshowfont=\toks19
-\MPscratchCnt=\count93
-\MPscratchDim=\dimen111
-\MPnumerator=\count94
-\makeMPintoPDFobject=\count95
-\everyMPtoPDFconversion=\toks20
+\nofMPsegments=\count94
+\nofMParguments=\count95
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count96
+\MPscratchDim=\dimen119
+\MPnumerator=\count97
+\makeMPintoPDFobject=\count98
+\everyMPtoPDFconversion=\toks21
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -480,10 +548,6 @@ Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
-)
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -521,141 +585,120 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 18.
+<../../../logoWAT.png, id=1, 327.1422pt x 426.6339pt>
+File: ../../../logoWAT.png Graphic file (type png)
+
+<use ../../../logoWAT.png>
+Package pdftex.def Info: ../../../logoWAT.png used on input line 30.
+(pdftex.def)             Requested size: 136.57462pt x 178.10435pt.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../../../logoWAT.png>] [1]
+ [2
+
+] (./main.toc
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 5.
 
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 18.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 5.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 18.
-
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 5.
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 18.
-
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 5.
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 18.
+(Font)              <12> on input line 5.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 18.
+(Font)              <8> on input line 5.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 18.
- [1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./main.toc)
+(Font)              <6> on input line 5.
+)
 \tf@toc=\write3
 \openout3 = `main.toc'.
 
- [1
+ [3] [4
 
-] [1
-
-] [2
+] [5] [6
 
 ]
 Rozdzia\l  1.
-(../rozdzialy/rozdzial1.tex
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 7.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 7.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 7.
-) [3] [4
+(../rozdzialy/rozdzial1.tex) [7] [8
 
 ]
 Rozdzia\l  2.
-(../rozdzialy/rozdzial2.tex) [5] [6
+(../rozdzialy/rozdzial2.tex) [9] [10
 
 ]
 Rozdzia\l  3.
 (../rozdzialy/rozdzial3.tex
+<../obrazy/schemat_aktualny.png, id=47, 880.79062pt x 622.57594pt>
+File: ../obrazy/schemat_aktualny.png Graphic file (type png)
 
-LaTeX Warning: File `./obrazy/schemat_aktualny.png' not found on input line 13.
+<use ../obrazy/schemat_aktualny.png>
+Package pdftex.def Info: ../obrazy/schemat_aktualny.png used on input line 13.
+(pdftex.def)             Requested size: 455.24411pt x 321.78441pt.
+ [11 <../obrazy/schemat_aktualny.png>]
+[12]) [13] [14
 
-
-
-! Package pdftex.def Error: File `./obrazy/schemat_aktualny.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.13 ...\textwidth]{./obrazy/schemat_aktualny.png}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 13.
-(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[7] [8]) [9] [10]
+]
 Rozdzia\l  4.
-[11
-
-] [12
+[15] [16
 
 ]
 Rozdzia\l  5.
-[13] [14
+[17] [18
 
 ]
 Rozdzia\l  6.
-[15] [16
+[19] [20
 
-] [17] [18
+] [21] [22
 
-]
-No file main.lof.
+] (./main.lof)
 \tf@lof=\write4
 \openout4 = `main.lof'.
 
-[19] [20
+ [23] [24
 
-]
-No file main.lot.
+] (./main.lot)
 \tf@lot=\write5
 \openout5 = `main.lot'.
 
-(./main.bbl) [21] (./main.aux)
+ (./main.bbl [25]
+[26
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+]) [27] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 2806 strings out of 494918
- 36778 string characters out of 6180100
- 93154 words of memory out of 5000000
- 6006 multiletter control sequences out of 15000+600000
- 53894 words of font info for 45 fonts, out of 8000000 for 9000
+ 3266 strings out of 494918
+ 43693 string characters out of 6180100
+ 110594 words of memory out of 5000000
+ 6455 multiletter control sequences out of 15000+600000
+ 50022 words of font info for 37 fonts, out of 8000000 for 9000
  34 hyphenation exceptions out of 8191
- 38i,6n,23p,246b,342s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/s
-hare/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm
-/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texm
-f/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12
-.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/
-type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></us
-r/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (23 pages, 144549 bytes).
+ 38i,5n,23p,240b,282s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/shar
+e/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/l
+m-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/f
+onts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.
+pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/t
+ype1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr
+/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/pub
+lic/lm/lmsy8.pfb>
+Output written on main.pdf (28 pages, 1664953 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
- 82 compressed objects within 1 object stream
+ 133 PDF objects out of 1000 (max. 8388607)
+ 91 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

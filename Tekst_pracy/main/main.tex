@@ -1,28 +1,61 @@
 \documentclass[a4paper, 12pt, twoside, openright]{report}
 
+\usepackage[top=2cm, bottom=2cm, left=2.5cm, right=2.5cm]{geometry}
 \usepackage[T1]{fontenc}
+\usepackage[polish=nohyphenation]{hyphsubst} % zapobiega dzieleniu wyrazów
 \usepackage[polish]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
 \usepackage{graphicx}
 \usepackage[nottoc]{tocbibind}
+%\usepackage{showframe}
 \selectlanguage{polish}
 \usepackage{subfiles}
 
-\begin{document}
 \title{Praca magisterska}
 \date{2019-10-25}
 \author{Piotr Gajcy}
 
-  \pagenumbering{gobble}
-  \maketitle
-  \newpage
-  \pagenumbering{arabic}
-  \pagenumbering{roman}
-  \tableofcontents
-  \newpage
-  \pagenumbering{arabic}
+\begin{document}
+
+\pagenumbering{gobble}
+% \maketitle
+\begin{titlepage}
+	\centering
+	{\large \textbf{WOJSKOWA AKADEMIA TECHNICZNA}} \\
+	{\large im. Jarosława Dąbrowskiego} \\
+	{\large \textbf{WYDZIAŁ ELEKTRONIKI}} \\
+	\noindent\rule{\textwidth}{4pt} \\
+	\vspace{10pt}
+	\includegraphics[width=0.30\textwidth]{../../../logoWAT.png}\par\vspace{1cm}
+	\vspace{20pt}
+	{\LARGE \textbf{PRACA DYPLOMOWA}} \\
+	\vspace{20pt}
+	**Temat pracy** \\ 
+	\vspace{10pt}
+	inż Piotr Gajcy, syn Zbigniewa	\\ 
+	\vspace{10pt}
+	{\large \textbf{ELEKTRONIKA I TELEKOMUNIKACJA}} \\ 
+	\vspace{10pt}
+	**Specjalność** \\ 
+	\vspace{10pt}
+	Niestacjonarne studia drugiego stopnia \\ 
+	\vspace{10pt}
+	**Dane promotora** \\ 
+	
+	\vspace*{\fill}
+	{\large \textbf{WARSZAWA 2019}}
+	
+\end{titlepage}
+\newpage
   
+Tekst testowy przed spisem treści.
+%\pagenumbering{roman}
+  
+\pagenumbering{arabic}
+\tableofcontents
+\newpage
+    
 \chapter*{Wstęp}
 \addcontentsline{toc}{chapter}{Wstęp}
 Hello World!
