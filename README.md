@@ -10,6 +10,7 @@
     * Zamocowany na seromechaniźmie
   * czy dodawać fotorezystory?
   * Dodać LED 5V wskazujący uruchomienie?
+  * Woltomierz mierżacy napięcie na AKU dopięty do złącza ARK 12V płytki zasilającej.
   
 
 ## Liczba potrzebnych pinów sterujących mikrokontrolera:
