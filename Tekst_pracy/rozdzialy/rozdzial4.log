@@ -1,12 +1,21 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.10.28)  6 NOV 2019 19:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.10.28)  4 NOV 2019 09:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**main.tex
-(./main.tex
+**rozdzial4.tex
+(./rozdzial4.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 4 language(s) loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+(/usr/share/texlive/texmf-dist/tex/latex/subfiles/subfiles.cls
+Document Class: subfiles 2012/05/23 Federico Garcia
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks14
+\verbatim@line=\toks15
+\verbatim@in@stream=\read1
+)
+Preamble taken from file `../main/main.tex'
+(../main/main.tex (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
@@ -29,7 +38,7 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks14
+\KV@toks@=\toks16
 )
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
@@ -53,7 +62,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutheight=\dimen108
 \Gm@layouthoffset=\dimen109
 \Gm@layoutvoffset=\dimen110
-\Gm@dimlist=\toks15
+\Gm@dimlist=\toks17
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
@@ -91,8 +100,8 @@ Package babel Info: Making " an active character on input line 83.
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
-\inpenc@prehook=\toks16
-\inpenc@posthook=\toks17
+\inpenc@prehook=\toks18
+\inpenc@posthook=\toks19
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2015/12/03 v1.1r UTF-8 support for inputenc
@@ -469,46 +478,40 @@ Package tocbibind Note: Using chapter style headings, unless overridden.
 ) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count93
-\float@exts=\toks18
+\float@exts=\toks20
 \float@box=\box26
-\@float@everytoks=\toks19
+\@float@everytoks=\toks21
 \@floatcapt=\box27
 )
-\@float@every@figure=\toks20
+\@float@every@figure=\toks22
 
 (/usr/share/texlive/texmf-dist/tex/latex/subfiles/subfiles.sty
 Package: subfiles 2012/05/23 Federico Garcia
+)))
+(./rozdzial4.aux)
+\openout1 = `rozdzial4.aux'.
 
-(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
-Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks21
-\verbatim@line=\toks22
-\verbatim@in@stream=\read1
-)) (./main.aux)
-\openout1 = `main.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 25.
-
-(/usr/share/texmf/tex/latex/lm/t1lmr.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 2.
+ (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
 * driver: pdftex
-* paper: a4paper
+* paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: twoside 
@@ -595,127 +598,31 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-<../../../logoWAT.png, id=1, 327.1422pt x 426.6339pt>
-File: ../../../logoWAT.png Graphic file (type png)
-
-<use ../../../logoWAT.png>
-Package pdftex.def Info: ../../../logoWAT.png used on input line 36.
-(pdftex.def)             Requested size: 136.57462pt x 178.10435pt.
- [1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../../../logoWAT.png>] [2]
- (./main.toc
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 5.
-
-(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
-File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 5.
-
-(/usr/share/texmf/tex/latex/lm/omllmm.fd
-File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 5.
-
-(/usr/share/texmf/tex/latex/lm/omslmsy.fd
-File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 5.
-
-(/usr/share/texmf/tex/latex/lm/omxlmex.fd
-File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 5.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 5.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 5.
- [5
-
-])
-\tf@toc=\write3
-\openout3 = `main.toc'.
-
- [6] [7
-
-] [8
-
-]
-Rozdzia\l  1.
-(../rozdzialy/rozdzial1.tex) [9] [10
-
-]
-Rozdzia\l  2.
-(../rozdzialy/rozdzial2.tex) [11] [12
-
-]
-Rozdzia\l  3.
-(../rozdzialy/rozdzial3.tex
-<../obrazy/schemat_aktualny.png, id=44, 880.79062pt x 622.57594pt>
-File: ../obrazy/schemat_aktualny.png Graphic file (type png)
-
-<use ../obrazy/schemat_aktualny.png>
-Package pdftex.def Info: ../obrazy/schemat_aktualny.png used on input line 13.
-(pdftex.def)             Requested size: 455.24411pt x 321.78441pt.
- [13 <../obrazy/schemat_aktualny.png>]
-[14]) [15] [16
-
-]
-Rozdzia\l  4.
-(../rozdzialy/rozdzial4.tex
-<../obrazy/test.png, id=59, 880.79062pt x 622.57594pt>
+<../obrazy/test.png, id=1, 880.79062pt x 622.57594pt>
 File: ../obrazy/test.png Graphic file (type png)
-
-<use ../obrazy/test.png>
+ <use ../obrazy/test.png>
 Package pdftex.def Info: ../obrazy/test.png used on input line 13.
 (pdftex.def)             Requested size: 341.43307pt x 241.33118pt.
- [17 <../obrazy/test.png>]) [18]
-Rozdzia\l  5.
-[19
 
-] [20
+[1
 
-]
-Rozdzia\l  6.
-[21] [22
-
-] [23] [24
-
-] (./main.lof)
-\tf@lof=\write4
-\openout4 = `main.lof'.
-
- [25] [26
-
-] (./main.lot)
-\tf@lot=\write5
-\openout5 = `main.lot'.
-
- (./main.bbl [27]
-[28
-
-]) [29] (./main.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../obrazy/test.png>]
+[2] (./rozdzial4.aux) ) 
 Here is how much of TeX's memory you used:
- 3337 strings out of 494918
- 44660 string characters out of 6180100
- 112057 words of memory out of 5000000
- 6518 multiletter control sequences out of 15000+600000
- 50022 words of font info for 37 fonts, out of 8000000 for 9000
+ 3227 strings out of 494918
+ 42671 string characters out of 6180100
+ 108232 words of memory out of 5000000
+ 6456 multiletter control sequences out of 15000+600000
+ 22709 words of font info for 22 fonts, out of 8000000 for 9000
  34 hyphenation exceptions out of 8191
- 38i,5n,23p,271b,297s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/shar
-e/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/l
-m-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/f
-onts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.
-pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/t
-ype1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr
-/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/pub
-lic/lm/lmsy8.pfb>
-Output written on main.pdf (27 pages, 1752706 bytes).
+ 38i,5n,25p,285b,242s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/sha
+re/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/
+lm/lmr12.pfb>
+Output written on rozdzial4.pdf (2 pages, 139777 bytes).
 PDF statistics:
- 132 PDF objects out of 1000 (max. 8388607)
- 89 compressed objects within 1 object stream
+ 23 PDF objects out of 1000 (max. 8388607)
+ 14 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

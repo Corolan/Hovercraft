@@ -1,0 +1,51 @@
+Wstęp
+
+Teoria zagadnienia
+    Historia i cel powstania poduszkowców
+    Teoria ruchu poduszkowca
+        Ciąg pionowy
+        Ciąg poziomy
+
+Model poduszkowca
+    Schemat konstrukcji mechanicznej
+    Schemat elektroniczny
+    Komponenty
+        Napęd 
+        Ster kierunku
+        Sterownik silników
+        Mikrokontroler Arduino
+        Moduł Bluetooth
+        Czujnik odległości
+        Przełączniki krańcowe
+        Zasilanie
+        Inne
+            Oświetlenie LED
+            Konwerter stanów logicznych
+        
+Konstrukcja urządzenia
+    Montaż konstrukcji mechanicznej
+    Montaż podzespołów elektronicznych
+    Prototyp
+    Gotowy model
+
+Program sterujący
+    Arduino IDE
+    Diagram przepływu programu
+    Funkcje wykorzystywane w programie
+    Funkcja zdalnej komunikacji
+
+Komunikacja bezprzewodowa
+    Bluetooth
+    Moduł HC-05
+    Przesyłane wiadomości   
+    Aplikacja mobilna
+        App Inventor
+        Design i działanie aplikacji    
+
+Testy urządzenia
+    Tryb autonomiczny - omijanie przeszkód
+    Zasięg zdalnego sterowania
+    Responsywność
+    Propozycje dalszych prac/udoskonaleń    
+
+Podsumowanie

@@ -7,7 +7,13 @@
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
 \usepackage{graphicx}
+\linespread{1.35} % 1.6 “double” linespacing 1.3 - normal
 \usepackage[nottoc]{tocbibind}
+\widowpenalty=300 % wdowy
+\clubpenalty=300 % sieroty
+\usepackage{float} %     |
+\floatstyle{boxed} %     |
+\restylefloat{figure} %  | - obwódki wokół rysunków
 %\usepackage{showframe}
 \selectlanguage{polish}
 \usepackage{subfiles}
@@ -30,7 +36,7 @@
 	\includegraphics[width=0.30\textwidth]{../../../logoWAT.png}\par\vspace{1cm}
 	\vspace{20pt}
 	{\LARGE \textbf{PRACA DYPLOMOWA}} \\
-	\vspace{20pt}
+	\vspace{30pt}
 	**Temat pracy** \\ 
 	\vspace{10pt}
 	inż Piotr Gajcy, syn Zbigniewa	\\ 
@@ -52,7 +58,9 @@
 Tekst testowy przed spisem treści.
 %\pagenumbering{roman}
   
+\newpage
 \pagenumbering{arabic}
+\setcounter{page}{5}
 \tableofcontents
 \newpage
     
@@ -67,7 +75,7 @@ Hello World!
 \chapter{Konstrukcja urządzenia}
 \subfile{../rozdzialy/rozdzial3.tex}
 \chapter{Program sterujący}
-Bo ściany.
+\subfile{../rozdzialy/rozdzial4.tex}
 \chapter{Komunikacja bezprzewodowa}
 Bluetooth.
 \chapter{Testy urządzenia}

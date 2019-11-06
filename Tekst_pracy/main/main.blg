@@ -5,45 +5,45 @@ The style file: plain.bst
 Database file #1: bibliografia.bib
 Warning--empty journal in Kowalski
 Warning--empty publisher in Nowak
-You've used 2 entries,
+You've used 4 entries,
             2118 wiz_defined-function locations,
-            509 strings with 4133 characters,
-and the built_in function-call counts, 616 in all, are:
-= -- 56
-> -- 26
+            519 strings with 4235 characters,
+and the built_in function-call counts, 1048 in all, are:
+= -- 94
+> -- 40
 < -- 1
-+ -- 10
-- -- 8
-* -- 31
-:= -- 103
-add.period$ -- 6
-call.type$ -- 2
-change.case$ -- 9
++ -- 17
+- -- 12
+* -- 47
+:= -- 179
+add.period$ -- 12
+call.type$ -- 4
+change.case$ -- 15
 chr.to.int$ -- 0
-cite$ -- 4
-duplicate$ -- 32
-empty$ -- 47
-format.name$ -- 8
-if$ -- 132
+cite$ -- 6
+duplicate$ -- 56
+empty$ -- 91
+format.name$ -- 12
+if$ -- 224
 int.to.chr$ -- 0
-int.to.str$ -- 2
-missing$ -- 3
-newline$ -- 13
-num.names$ -- 4
-pop$ -- 18
+int.to.str$ -- 4
+missing$ -- 7
+newline$ -- 23
+num.names$ -- 8
+pop$ -- 34
 preamble$ -- 1
-purify$ -- 8
+purify$ -- 14
 quote$ -- 0
-skip$ -- 26
+skip$ -- 38
 stack$ -- 0
-substring$ -- 18
-swap$ -- 10
+substring$ -- 29
+swap$ -- 12
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 6
+type$ -- 10
 warning$ -- 2
-while$ -- 5
-width$ -- 3
-write$ -- 21
+while$ -- 9
+width$ -- 5
+write$ -- 41
 (There were 2 warnings)
