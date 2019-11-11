@@ -25,9 +25,10 @@
 
 ## Do zrobienia
 - [ ] Określić ramy czasowe
-- [x] Lista części
-- [x] Wstępny schemat
-  - [x] Projekt obwodu zasilania
+- [ ] Lista części
+  - [ ] Znaleźć silnik sterujący i sterownik do niego, śmigło i piastę
+- [ ] Wstępny schemat
+  - [] Projekt obwodu zasilania
   - [x] Projekt obwodu czujników
 - [ ] Zakup części
 - [ ] Projekt konstrukcji głównej
@@ -44,18 +45,16 @@
   * Dystanse
     * [Tuleje dystansowe - ABC](https://abc-rc.pl/product-pol-7191-Zestaw-180-sztuk-Srub-i-Tulei-Dystansowych-M3-6-8-10-12-15-20-mm-Poliamid.html)
 * Napęd:    
-  * Silniki poduszki powietrznej:
-    * [Dmuchawa wentylatorowa 12V 4,2W - BOTLAND](https://botland.com.pl/pl/pompy/8875-dmuchawa-wentylatorowa-12v-42w-97x97x33mm.html?search_query=Dmuchawa+wentylatorowa+12V+4%2C2W&results=1)
-  * Silnik napędowy:
-    * [Silnik GPX Extreme Swift 500 12V 11700RPM - BOTLAND](https://botland.com.pl/pl/silniki-dc-bez-przekladni/7304-silnik-gpx-extreme-swift-500-12v-11700rpm.html)
-  * Piasta śmigła napędowego
-    * [Piasta śmigła Gemfan 3,17/M5 - samozaciskowa - CW - prawa - ABC](https://abc-rc.pl/product-pol-4299-Piasta-smigla-Gemfan-3-17-M5-samozaciskowa-CW-prawa.html)
-  * Śmigło napędowe:
-    * [Śmigło 6x4E - black - HIGH Speed - śmigło 6040E - ABC](https://abc-rc.pl/product-pol-12265-Smiglo-6x4E-black-HIGH-Speed-smiglo-6040E.html)
+  * Silniki poduszki powietrznej i napędu:
+    * [Silnik ABC-Power A2212 1400KV 2-3S - 180W - ciąg 830g - ABC](https://abc-rc.pl/product-pol-6763-Silnik-ABC-Power-A2212-1400KV-2-3S-180W-ciag-830g.html) -x2
+  * Sterowniki silników:
+    * [ESC ABC-Power Air 30A 2-3S - BEC 1A - Prosty regulator silników - ABC](https://abc-rc.pl/product-pol-6747-ESC-ABC-Power-Air-30A-2-3S-BEC-1A-Prosty-regulator-silnikow.html) -x2
+  * Piasty śmigieł
+    * [Piasta śmigła Gemfan 3,17/M5 - samozaciskowa - CW - prawa - ABC](https://abc-rc.pl/product-pol-4299-Piasta-smigla-Gemfan-3-17-M5-samozaciskowa-CW-prawa.html) -x2
+  * Śmigła:
+    * [Śmigło 6x4E - black - HIGH Speed - śmigło 6040E - ABC](https://abc-rc.pl/product-pol-12265-Smiglo-6x4E-black-HIGH-Speed-smiglo-6040E.html) -x2
   * Mocowanie silnika napędowego:
     * [Gimbal - jedno serwo? - ABC](https://abc-rc.pl/product-pol-1549-Gimbal-Nylon-30x30-Pan-Tilt-do-kamery-Cmos.html)
-  * Sterownik silnika napędowego i dmuchawy:
-    * [L298N - dwukanałowy sterownik silników - moduł 12V/2A - BOTLAND](https://botland.com.pl/pl/sterowniki-silnikow-moduly/3164-l298n-dwukanalowy-sterownik-silnikow-modul-12v2a.html?search_query=L298N+-+dwukanalowy+sterownik+silnikow+-+modul+12V%2F2&results=2)
 * Łączność:
   * [Moduł Bluetooth HC-05 - ABC](https://abc-rc.pl/product-pol-6189-Bluetooth-HC-05-master-slave-modul-do-APM-i-AlexMos-Arduino.html)
   * [Konwerter poziomów logicznych -ABC](https://abc-rc.pl/product-pol-6191-Konwerter-poziomow-3-3-5V-4-kanaly-stanow-logicznych-SPI-UART-Arduino.html)
@@ -64,13 +63,16 @@
   * [Marker do rysowania ścieżek - ABC](https://abc-rc.pl/product-pol-9594-Marker-do-rysowania-sciezek-0-3mm-czarny.html?rec=101801302)
   * [Nadsiarczan sodowy - ABC](https://abc-rc.pl/product-pol-10124-Wytrawiacz-do-plytek-drukowanych-B327-Nadsiarczan-sodowy.html)
   * [Trzecia Ręka z Lupą - ABC](https://abc-rc.pl/product-pol-6275-Trzecia-Reka-z-Lupa-podswietlenie-LED-ZD-10MB.html)
+
 * Zasilanie:
   * Akumulator Li-Pol:
-    * [Akumulator Tattu 1300mAh 3S 75C - ABC](https://abc-rc.pl/product-pol-6659-Akumulator-Tattu-1300mAh-3S-75C-Li-pol-Gens-Ace-11-1V.html)
+    * [Pakiet Li-Pol Redox 1800mAh 30C 3S 11,1V - BOTLAND](https://botland.com.pl/pl/akumulatory-li-pol/9309-pakiet-li-pol-redox-1800mah-30c-3s-111v.html)
   * Złącze do akumulatora 
-    * [Złącze XT60](https://abc-rc.pl/product-pol-1571-Wtyki-XT60-Konektor-wtyk-i-gniazdo-wysoko-pradowe.html)
+    * [Para konektorów T-DEAN - BOTLAND](https://botland.com.pl/pl/przewody-i-zlacza-zasilajace/1339-para-konektorow-t-dean.html)
   * Ładowarka Li-Pol
     * [Ładowarka modelarska IMAX B3 - 2S/3S - ABC](https://abc-rc.pl/product-pol-3961-Ladowarka-modelarska-IMAX-B3-2S-3S-li-pol-zasilanie-230V.html?rec=101002101)
+  * Mocowanie zasilania:
+    * [Rzep z klamrą do akumulatorów GPX 350mm](https://botland.com.pl/pl/rzepy-do-akumulatorow/4363-rzep-z-klamra-do-akumulatorow-gpx-350mm-1szt.html)
   * Włącznik:
     * [Przełącznik kołyskowy - ABC](https://abc-rc.pl/product-pol-12025-Przelacznik-kolyskowy-MRS102-A-C3R-15x21mm-3PIN-ON-OFF-bistabilny.html)
   * Rozprowadzenie napięcia
@@ -83,6 +85,7 @@
   * Przewody:
     * [Przewód silikonowy miedziany ocynowany - czerwony - ABC](https://abc-rc.pl/product-pol-4851-Przewod-silikonowy-miedziany-ocynowany-20AWG-100-zyl-0-5mm2-czerwony-elastyczny.html)
     * [Przewód silikonowy miedziany ocynowany - czarny - ABC](https://abc-rc.pl/product-pol-4852-Przewod-silikonowy-miedziany-ocynowany-20AWG-100-zyl-0-5mm2-czarny-elastyczny.html)
+
  * Dioda oświetleniowa
    * [Lampa LED 12V 1,5W - ABC](https://abc-rc.pl/product-pol-7335-Lampa-LED-12V-1-5W-samoprzylepna-lampa-do-dronow.html)
    * [Moduł przekaźnika - ABC](https://abc-rc.pl/product-pol-12107-Modul-przekaznika-1-kanal-5V-10A-250V-modul-przekaznikowy.html)

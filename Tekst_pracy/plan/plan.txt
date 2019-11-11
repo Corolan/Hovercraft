@@ -10,7 +10,8 @@ Model poduszkowca
     Schemat konstrukcji mechanicznej
     Schemat elektroniczny
     Komponenty
-        Napęd 
+        Ciąg pionowy
+        ??Napęd
         Ster kierunku
         Sterownik silników
         Mikrokontroler Arduino
