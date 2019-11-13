@@ -7,7 +7,7 @@
   * Poduszka -> materiałowa? Stara ortalionowa kurtka?
   * Jeden/Dwa silniki do napełnienie poduszki -> Kanały sterownika (dwie dmuchawy sterowane jednym sygnałem?)
   * Silnik napędowy
-    * Zamocowany na seromechaniźmie
+    * Zamocowany na serwomechaniźmie
   * czy dodawać fotorezystory?
   * Dodać LED 5V wskazujący uruchomienie?
   * Woltomierz mierżacy napięcie na AKU dopięty do złącza ARK 12V płytki zasilającej.
@@ -27,8 +27,9 @@
 - [ ] Określić ramy czasowe
 - [ ] Lista części
   - [ ] Znaleźć silnik sterujący i sterownik do niego, śmigło i piastę
+  - [ ] Określić liczbę i rozmiar potrzebnych śrub mocujących elementy
 - [ ] Wstępny schemat
-  - [] Projekt obwodu zasilania
+  - [ ] Projekt obwodu zasilania
   - [x] Projekt obwodu czujników
 - [ ] Zakup części
 - [ ] Projekt konstrukcji głównej
@@ -55,6 +56,12 @@
     * [Śmigło 6x4E - black - HIGH Speed - śmigło 6040E - ABC](https://abc-rc.pl/product-pol-12265-Smiglo-6x4E-black-HIGH-Speed-smiglo-6040E.html) -x2
   * Mocowanie silnika napędowego:
     * [Gimbal - jedno serwo? - ABC](https://abc-rc.pl/product-pol-1549-Gimbal-Nylon-30x30-Pan-Tilt-do-kamery-Cmos.html)
+  * Silnik sterujący:
+    * [Silnik szczotkowy DC 9V - ABC](https://abc-rc.pl/product-pol-11763-Silnik-szczotkowy-DC-9V-typ-MT103-RS380SH-os-8mm.html)
+  * Sterownik silnika sterującego:
+    * [Moduł sterownika L298N - ABC](https://abc-rc.pl/product-pol-6196-Modul-sterownika-L298N-do-silnikow-DC-i-krokowych-Arduino.html) 
+  * Śmigło silnika sterującego:
+    * [Piasta śmigła 2,0/M3](https://abc-rc.pl/product-pol-12373-Piasta-smigla-2-0-M3-samozaciskowa-CW-prawa.html)
 * Łączność:
   * [Moduł Bluetooth HC-05 - ABC](https://abc-rc.pl/product-pol-6189-Bluetooth-HC-05-master-slave-modul-do-APM-i-AlexMos-Arduino.html)
   * [Konwerter poziomów logicznych -ABC](https://abc-rc.pl/product-pol-6191-Konwerter-poziomow-3-3-5V-4-kanaly-stanow-logicznych-SPI-UART-Arduino.html)
