@@ -70,7 +70,6 @@
   * [Marker do rysowania ścieżek - ABC](https://abc-rc.pl/product-pol-9594-Marker-do-rysowania-sciezek-0-3mm-czarny.html?rec=101801302)
   * [Nadsiarczan sodowy - ABC](https://abc-rc.pl/product-pol-10124-Wytrawiacz-do-plytek-drukowanych-B327-Nadsiarczan-sodowy.html)
   * [Trzecia Ręka z Lupą - ABC](https://abc-rc.pl/product-pol-6275-Trzecia-Reka-z-Lupa-podswietlenie-LED-ZD-10MB.html)
-
 * Zasilanie:
   * Akumulator Li-Pol:
     * [Pakiet Li-Pol Redox 1800mAh 30C 3S 11,1V - BOTLAND](https://botland.com.pl/pl/akumulatory-li-pol/9309-pakiet-li-pol-redox-1800mah-30c-3s-111v.html)
@@ -82,8 +81,6 @@
     * [Rzep z klamrą do akumulatorów GPX 350mm](https://botland.com.pl/pl/rzepy-do-akumulatorow/4363-rzep-z-klamra-do-akumulatorow-gpx-350mm-1szt.html)
   * Włącznik:
     * [Przełącznik kołyskowy - ABC](https://abc-rc.pl/product-pol-12025-Przelacznik-kolyskowy-MRS102-A-C3R-15x21mm-3PIN-ON-OFF-bistabilny.html)
-  * Rozprowadzenie napięcia
-    * [Płytka zasilająca - ABC](https://abc-rc.pl/product-pol-4741-Plytka-zasilajaca-ESC-100A-CRIUS-v1-0-plytka-dystrybucji-pradu-do-drona.html)
   * Stabilizatory 5V 9V 3.3V
     * [9V - BOTLAND](https://botland.com.pl/pl/regulatory-napiecia/1902-stabilizator-9v-l7809cv-tht-to220.html)
     * [5V - BOTLAND](https://botland.com.pl/pl/regulatory-napiecia/3092-stabilizator-5v-l7805cv-tht-to220.html)
@@ -92,7 +89,6 @@
   * Przewody:
     * [Przewód silikonowy miedziany ocynowany - czerwony - ABC](https://abc-rc.pl/product-pol-4851-Przewod-silikonowy-miedziany-ocynowany-20AWG-100-zyl-0-5mm2-czerwony-elastyczny.html)
     * [Przewód silikonowy miedziany ocynowany - czarny - ABC](https://abc-rc.pl/product-pol-4852-Przewod-silikonowy-miedziany-ocynowany-20AWG-100-zyl-0-5mm2-czarny-elastyczny.html)
-
  * Dioda oświetleniowa
    * [Lampa LED 12V 1,5W - ABC](https://abc-rc.pl/product-pol-7335-Lampa-LED-12V-1-5W-samoprzylepna-lampa-do-dronow.html)
    * [Moduł przekaźnika - ABC](https://abc-rc.pl/product-pol-12107-Modul-przekaznika-1-kanal-5V-10A-250V-modul-przekaznikowy.html)
@@ -101,7 +97,6 @@
    * [Woltomierz - ABC](https://abc-rc.pl/product-pol-6306-Woltomierz-DC-3-30V-0-36-LED-czerwony-bez-obudowy.html)
    * [Wyłącznik krańcowy WK615 - dźwignia 55mm - ABC](https://abc-rc.pl/product-pol-9842-Wylacznik-krancowy-WK615-dzwignia-55mm.html)
    * [Uchwyt serwa - ABC](https://abc-rc.pl/product-pol-7542-Mocowanie-serwa-9g-SG90-ramka-plexi-36x35-srubki.html)
-
 * Narzędzia
   * [Pistolet do kleju na gorąco - ABC](https://abc-rc.pl/product-pol-11945-Pistolet-do-kleju-na-goraco-110-240V-40W-Glue-Gun.html)
   * [Klej - ABC](https://abc-rc.pl/product-pol-11946-Klej-do-pistoletu-na-goraco-16x1-1cm-klej-do-klejenia-na-goraco-przezroczysty.html)
@@ -110,7 +105,6 @@
   * [Złącza ARK 2 pin - ABC](https://abc-rc.pl/product-pol-11824-Zlacze-ARK-2PIN-raster-5mm-do-zalutowania-druku-10szt.html)
   * [Złącze kołkowe 4 piny - ABC](https://abc-rc.pl/product-pol-5430-Gniazdo-kolkowe-2-54mm-4-piny-10-szt-zenskie-do-ukladow-elektronicznych.html?rec=101002206)
   * [Złącze kołkowe 2 piny - ABC](https://abc-rc.pl/product-pol-5428-Gniazdo-kolkowe-2-54mm-2-piny-10-szt-zenskie-do-ukladow-elektronicznych.html?rec=101002203)
-  * []()
   * [Płytka stykowa 830 - ABC](https://abc-rc.pl/product-pol-6204-Plytka-stykowa-830-do-Arduino-MB-102-prototypowa.html)
   * [Płytka stykowa 170 - ABC](https://abc-rc.pl/product-pol-6296-Plytka-stykowa-170-pol-SYB-170-1-szt-budowa-prototypow-Arduino.html)
   * [Płytka stykowa 400 - ABC](https://abc-rc.pl/product-pol-6203-Plytka-stykowa-400-pol-MR200-001-uniwersalna-plytka-stykowa.html)
