@@ -11,6 +11,7 @@
   * czy dodawać fotorezystory?
   * Dodać LED 5V wskazujący uruchomienie?
   * Woltomierz mierżacy napięcie na AKU dopięty do złącza ARK 12V płytki zasilającej.
+  * Dodać akcelerometr - kontrola przechyłu?
   
 
 ## Liczba potrzebnych pinów sterujących mikrokontrolera:
@@ -46,22 +47,22 @@
   * Dystanse
     * [Tuleje dystansowe - ABC](https://abc-rc.pl/product-pol-7191-Zestaw-180-sztuk-Srub-i-Tulei-Dystansowych-M3-6-8-10-12-15-20-mm-Poliamid.html)
 * Napęd:    
-  * Silniki poduszki powietrznej i napędu:
-    * [Silnik ABC-Power A2212 1400KV 2-3S - 180W - ciąg 830g - ABC](https://abc-rc.pl/product-pol-6763-Silnik-ABC-Power-A2212-1400KV-2-3S-180W-ciag-830g.html) -x2
-  * Sterowniki silników:
-    * [ESC ABC-Power Air 30A 2-3S - BEC 1A - Prosty regulator silników - ABC](https://abc-rc.pl/product-pol-6747-ESC-ABC-Power-Air-30A-2-3S-BEC-1A-Prosty-regulator-silnikow.html) -x2
+  * Silniki poduszki powietrznej:
+    * [Dmuchawa wentylatorowa 12V 4,2W - BOTLAND](https://botland.com.pl/pl/pompy/8875-dmuchawa-wentylatorowa-12v-42w-97x97x33mm.html?search_query=Dmuchawa+wentylatorowa+12V+4%2C2W&results=1)
+  * Silnik napędowy:
+    * [Silnik GPX Extreme Swift 500 12V 11700RPM - BOTLAND](https://botland.com.pl/pl/silniki-dc-bez-przekladni/7304-silnik-gpx-extreme-swift-500-12v-11700rpm.html)
+  * Łoże silnika napędowego:
+    * [Łoże silnika do modeli RC - ABC](https://abc-rc.pl/product-pol-12236-Loze-silnika-do-modeli-RC-zestaw-DIY-mocowane-na-skrzydla-lub-bagnety-EPP.html)
+  * Piasta śmigła napędowego
+    * [Piasta śmigła Gemfan 3,17/M5 - samozaciskowa - CW - prawa - ABC](https://abc-rc.pl/product-pol-4299-Piasta-smigla-Gemfan-3-17-M5-samozaciskowa-CW-prawa.html)
+  * Śmigło napędowe:
+    * [Śmigło 6x4E - black - HIGH Speed - śmigło 6040E - ABC](https://abc-rc.pl/product-pol-12265-Smiglo-6x4E-black-HIGH-Speed-smiglo-6040E.html)
   * Piasty śmigieł
     * [Piasta śmigła Gemfan 3,17/M5 - samozaciskowa - CW - prawa - ABC](https://abc-rc.pl/product-pol-4299-Piasta-smigla-Gemfan-3-17-M5-samozaciskowa-CW-prawa.html) -x2
   * Śmigła:
     * [Śmigło 6x4E - black - HIGH Speed - śmigło 6040E - ABC](https://abc-rc.pl/product-pol-12265-Smiglo-6x4E-black-HIGH-Speed-smiglo-6040E.html) -x2
-  * Mocowanie silnika napędowego:
-    * [Gimbal - jedno serwo? - ABC](https://abc-rc.pl/product-pol-1549-Gimbal-Nylon-30x30-Pan-Tilt-do-kamery-Cmos.html)
-  * Silnik sterujący:
-    * [Silnik szczotkowy DC 9V - ABC](https://abc-rc.pl/product-pol-11763-Silnik-szczotkowy-DC-9V-typ-MT103-RS380SH-os-8mm.html)
   * Sterownik silnika sterującego:
     * [Moduł sterownika L298N - ABC](https://abc-rc.pl/product-pol-6196-Modul-sterownika-L298N-do-silnikow-DC-i-krokowych-Arduino.html) 
-  * Śmigło silnika sterującego:
-    * [Piasta śmigła 2,0/M3](https://abc-rc.pl/product-pol-12373-Piasta-smigla-2-0-M3-samozaciskowa-CW-prawa.html)
 * Łączność:
   * [Moduł Bluetooth HC-05 - ABC](https://abc-rc.pl/product-pol-6189-Bluetooth-HC-05-master-slave-modul-do-APM-i-AlexMos-Arduino.html)
   * [Konwerter poziomów logicznych -ABC](https://abc-rc.pl/product-pol-6191-Konwerter-poziomow-3-3-5V-4-kanaly-stanow-logicznych-SPI-UART-Arduino.html)
@@ -89,6 +90,8 @@
   * Przewody:
     * [Przewód silikonowy miedziany ocynowany - czerwony - ABC](https://abc-rc.pl/product-pol-4851-Przewod-silikonowy-miedziany-ocynowany-20AWG-100-zyl-0-5mm2-czerwony-elastyczny.html)
     * [Przewód silikonowy miedziany ocynowany - czarny - ABC](https://abc-rc.pl/product-pol-4852-Przewod-silikonowy-miedziany-ocynowany-20AWG-100-zyl-0-5mm2-czarny-elastyczny.html)
+  * Płytka do lutowania:
+   * [Płytka uniwersalna - ABC](https://abc-rc.pl/product-pol-8249-Plytka-uniwersalna-dwustronna-40x60mm-PI23Z-PCB.html) 
  * Dioda oświetleniowa
    * [Lampa LED 12V 1,5W - ABC](https://abc-rc.pl/product-pol-7335-Lampa-LED-12V-1-5W-samoprzylepna-lampa-do-dronow.html)
    * [Moduł przekaźnika - ABC](https://abc-rc.pl/product-pol-12107-Modul-przekaznika-1-kanal-5V-10A-250V-modul-przekaznikowy.html)
@@ -97,6 +100,8 @@
    * [Woltomierz - ABC](https://abc-rc.pl/product-pol-6306-Woltomierz-DC-3-30V-0-36-LED-czerwony-bez-obudowy.html)
    * [Wyłącznik krańcowy WK615 - dźwignia 55mm - ABC](https://abc-rc.pl/product-pol-9842-Wylacznik-krancowy-WK615-dzwignia-55mm.html)
    * [Uchwyt serwa - ABC](https://abc-rc.pl/product-pol-7542-Mocowanie-serwa-9g-SG90-ramka-plexi-36x35-srubki.html)
+* Akcelerometr
+  * [Akcelerometr 3-osiowy MPU-6050 /GY-521 - ABC](https://abc-rc.pl/product-pol-6572-Akcelerometr-3-osiowy-MPU-6050-GY-521-zyroskop-na-I2C.html)
 * Narzędzia
   * [Pistolet do kleju na gorąco - ABC](https://abc-rc.pl/product-pol-11945-Pistolet-do-kleju-na-goraco-110-240V-40W-Glue-Gun.html)
   * [Klej - ABC](https://abc-rc.pl/product-pol-11946-Klej-do-pistoletu-na-goraco-16x1-1cm-klej-do-klejenia-na-goraco-przezroczysty.html)
@@ -116,6 +121,13 @@
   * [Moduł RFID](https://abc-rc.pl/product-pol-6410-Modul-czytnika-RFID-RC522-13-56MHz-karta-brelok-Arduino.html)
   * [Listwa goldpin prosta - ABC](https://abc-rc.pl/product-pol-6349-Listwa-kolkowa-2-54mm-40-pinow-10-szt-goldpin-do-ukladow-elektronicznych.html)
   * [Listwa goldpin kątowa - ABC](https://abc-rc.pl/product-pol-5433-Listwa-kolkowa-2-54mm-katowa-20-pinow-10-szt-goldpin-do-ukladow-elektronicznych.html)
+
+
+* Gadżety:
+  * Odtwarzanie Audio:
+    * [Odtwarzacz  plików - ABC](https://abc-rc.pl/product-pol-8458-Modul-odtwarzacz-dzwieku-MP3-WTV020-SD-Arduino.html)
+    * [Wzacniacz - ABC](https://abc-rc.pl/product-pol-6326-Modul-wzmacniacz-audio-2x3W-5V-PAM8403-Arduino.html)
+    * [Głośnik - ABC](https://abc-rc.pl/product-pol-8013-Glosnik-mini-0-5W-8Ohm-D30mm.html)
 
 
 
