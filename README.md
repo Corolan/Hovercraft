@@ -2,12 +2,8 @@
 
 ## Pomysły i uwagi
 * Pojazd na poduszcze powietrznej
-  * Lekka rama -> balsa
-    * Dwa poziomy: pokład głownu i podpokład z elektroniką - ciąg powietrza zapewni chłodzenie
+  * Dwa poziomy: pokład głownu i podpokład z elektroniką - ciąg powietrza zapewni chłodzenie
   * Poduszka -> materiałowa? Stara ortalionowa kurtka?
-  * Jeden/Dwa silniki do napełnienie poduszki -> Kanały sterownika (dwie dmuchawy sterowane jednym sygnałem?)
-  * Silnik napędowy
-    * Zamocowany na serwomechaniźmie
   * czy dodawać fotorezystory?
   * Dodać LED 5V wskazujący uruchomienie?
   * Woltomierz mierżacy napięcie na AKU dopięty do złącza ARK 12V płytki zasilającej.
@@ -57,20 +53,13 @@
     * [Piasta śmigła Gemfan 3,17/M5 - samozaciskowa - CW - prawa - ABC](https://abc-rc.pl/product-pol-4299-Piasta-smigla-Gemfan-3-17-M5-samozaciskowa-CW-prawa.html)
   * Śmigło napędowe:
     * [Śmigło 6x4E - black - HIGH Speed - śmigło 6040E - ABC](https://abc-rc.pl/product-pol-12265-Smiglo-6x4E-black-HIGH-Speed-smiglo-6040E.html)
-  * Piasty śmigieł
-    * [Piasta śmigła Gemfan 3,17/M5 - samozaciskowa - CW - prawa - ABC](https://abc-rc.pl/product-pol-4299-Piasta-smigla-Gemfan-3-17-M5-samozaciskowa-CW-prawa.html) -x2
-  * Śmigła:
-    * [Śmigło 6x4E - black - HIGH Speed - śmigło 6040E - ABC](https://abc-rc.pl/product-pol-12265-Smiglo-6x4E-black-HIGH-Speed-smiglo-6040E.html) -x2
   * Sterownik silnika sterującego:
     * [Moduł sterownika L298N - ABC](https://abc-rc.pl/product-pol-6196-Modul-sterownika-L298N-do-silnikow-DC-i-krokowych-Arduino.html) 
+  * Stery kierunku:
+    * [DFRobot Gravity - moduł wiatraka z silnikiem DC 3-6V](https://botland.com.pl/pl/smigla/3559-dfrobot-gravity-modul-wiatraka-z-silnikiem-dc-3-6v.html)
 * Łączność:
   * [Moduł Bluetooth HC-05 - ABC](https://abc-rc.pl/product-pol-6189-Bluetooth-HC-05-master-slave-modul-do-APM-i-AlexMos-Arduino.html)
   * [Konwerter poziomów logicznych -ABC](https://abc-rc.pl/product-pol-6191-Konwerter-poziomow-3-3-5V-4-kanaly-stanow-logicznych-SPI-UART-Arduino.html)
-* Wytrawianie płytek pcb:
-  * [Zestaw płytek - ABC](https://abc-rc.pl/product-pol-9595-Zestaw-laminatow-0-35kg-rozne-wymiary-do-budowy-plytek-PCB.html) 
-  * [Marker do rysowania ścieżek - ABC](https://abc-rc.pl/product-pol-9594-Marker-do-rysowania-sciezek-0-3mm-czarny.html?rec=101801302)
-  * [Nadsiarczan sodowy - ABC](https://abc-rc.pl/product-pol-10124-Wytrawiacz-do-plytek-drukowanych-B327-Nadsiarczan-sodowy.html)
-  * [Trzecia Ręka z Lupą - ABC](https://abc-rc.pl/product-pol-6275-Trzecia-Reka-z-Lupa-podswietlenie-LED-ZD-10MB.html)
 * Zasilanie:
   * Akumulator Li-Pol:
     * [Pakiet Li-Pol Redox 1800mAh 30C 3S 11,1V - BOTLAND](https://botland.com.pl/pl/akumulatory-li-pol/9309-pakiet-li-pol-redox-1800mah-30c-3s-111v.html)
@@ -92,16 +81,22 @@
     * [Przewód silikonowy miedziany ocynowany - czarny - ABC](https://abc-rc.pl/product-pol-4852-Przewod-silikonowy-miedziany-ocynowany-20AWG-100-zyl-0-5mm2-czarny-elastyczny.html)
   * Płytka do lutowania:
    * [Płytka uniwersalna - ABC](https://abc-rc.pl/product-pol-8249-Plytka-uniwersalna-dwustronna-40x60mm-PI23Z-PCB.html) 
- * Dioda oświetleniowa
+* Dioda oświetleniowa
    * [Lampa LED 12V 1,5W - ABC](https://abc-rc.pl/product-pol-7335-Lampa-LED-12V-1-5W-samoprzylepna-lampa-do-dronow.html)
-   * [Moduł przekaźnika - ABC](https://abc-rc.pl/product-pol-12107-Modul-przekaznika-1-kanal-5V-10A-250V-modul-przekaznikowy.html)
- * Czujniki i akcesoria do czujników:
+   * [Tranzystor NPN - BOTLAND](https://botland.com.pl/pl/tranzystory-bipolarne/1775-tranzystor-bipolarny-npn-2n3904-40v02a-5szt.html?search_query=NPN&results=15)
+* Dioda oświetleniowa - "szperacz"
+   * [Lampa LED 12V 1,5W - ABC](https://abc-rc.pl/product-pol-7335-Lampa-LED-12V-1-5W-samoprzylepna-lampa-do-dronow.html)
+   * [Tranzystor NPN - BOTLAND](https://botland.com.pl/pl/tranzystory-bipolarne/1775-tranzystor-bipolarny-npn-2n3904-40v02a-5szt.html?search_query=NPN&results=15)
+   * [Serwo - BOTLAND](https://botland.com.pl/pl/serwomechanizmy/484-serwo-towerpro-sg-90-micro-180.html) 
+   * [Uchwyt serwa - ABC](https://abc-rc.pl/product-pol-7542-Mocowanie-serwa-9g-SG90-ramka-plexi-36x35-srubki.html)
+* Czujniki i akcesoria do czujników:
    * [Uchwyt czujnika HC-SR04 - ABC](https://abc-rc.pl/product-pol-7320-Uchwyt-czujnika-HC-SR04-mocowanie-czujnika-SR04.html)
    * [Woltomierz - ABC](https://abc-rc.pl/product-pol-6306-Woltomierz-DC-3-30V-0-36-LED-czerwony-bez-obudowy.html)
    * [Wyłącznik krańcowy WK615 - dźwignia 55mm - ABC](https://abc-rc.pl/product-pol-9842-Wylacznik-krancowy-WK615-dzwignia-55mm.html)
-   * [Uchwyt serwa - ABC](https://abc-rc.pl/product-pol-7542-Mocowanie-serwa-9g-SG90-ramka-plexi-36x35-srubki.html)
 * Akcelerometr
   * [Akcelerometr 3-osiowy MPU-6050 /GY-521 - ABC](https://abc-rc.pl/product-pol-6572-Akcelerometr-3-osiowy-MPU-6050-GY-521-zyroskop-na-I2C.html)
+
+
 * Narzędzia
   * [Pistolet do kleju na gorąco - ABC](https://abc-rc.pl/product-pol-11945-Pistolet-do-kleju-na-goraco-110-240V-40W-Glue-Gun.html)
   * [Klej - ABC](https://abc-rc.pl/product-pol-11946-Klej-do-pistoletu-na-goraco-16x1-1cm-klej-do-klejenia-na-goraco-przezroczysty.html)
@@ -129,5 +124,9 @@
     * [Wzacniacz - ABC](https://abc-rc.pl/product-pol-6326-Modul-wzmacniacz-audio-2x3W-5V-PAM8403-Arduino.html)
     * [Głośnik - ABC](https://abc-rc.pl/product-pol-8013-Glosnik-mini-0-5W-8Ohm-D30mm.html)
 
-
+* Wytrawianie płytek pcb:
+  * [Zestaw płytek - ABC](https://abc-rc.pl/product-pol-9595-Zestaw-laminatow-0-35kg-rozne-wymiary-do-budowy-plytek-PCB.html) 
+  * [Marker do rysowania ścieżek - ABC](https://abc-rc.pl/product-pol-9594-Marker-do-rysowania-sciezek-0-3mm-czarny.html?rec=101801302)
+  * [Nadsiarczan sodowy - ABC](https://abc-rc.pl/product-pol-10124-Wytrawiacz-do-plytek-drukowanych-B327-Nadsiarczan-sodowy.html)
+  * [Trzecia Ręka z Lupą - ABC](https://abc-rc.pl/product-pol-6275-Trzecia-Reka-z-Lupa-podswietlenie-LED-ZD-10MB.html)
 

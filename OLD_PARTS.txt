@@ -11,7 +11,7 @@
     * [Gimbal - jedno serwo? - ABC](https://abc-rc.pl/product-pol-1549-Gimbal-Nylon-30x30-Pan-Tilt-do-kamery-Cmos.html)
   * Sterownik silnika napędowego i dmuchawy:
     * [L298N - dwukanałowy sterownik silników - moduł 12V/2A - BOTLAND](https://botland.com.pl/pl/sterowniki-silnikow-moduly/3164-l298n-dwukanalowy-sterownik-silnikow-modul-12v2a.html?search_query=L298N+-+dwukanalowy+sterownik+silnikow+-+modul+12V%2F2&results=2)
-
+    * [Wiatraczek z silnikiem + sterownik L9110 - BOTLAND](https://botland.com.pl/pl/wentylatory/8239-wiatraczek-z-silnikiem-sterownik-l9110.html)
 
     * [Akumulator Tattu 1300mAh 3S 75C - ABC](https://abc-rc.pl/product-pol-6659-Akumulator-Tattu-1300mAh-3S-75C-Li-pol-Gens-Ace-11-1V.html)
     * [Złącze XT60](https://abc-rc.pl/product-pol-1571-Wtyki-XT60-Konektor-wtyk-i-gniazdo-wysoko-pradowe.html)
