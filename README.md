@@ -56,7 +56,7 @@
   * Sterownik silnika sterującego:
     * [Moduł sterownika L298N - ABC](https://abc-rc.pl/product-pol-6196-Modul-sterownika-L298N-do-silnikow-DC-i-krokowych-Arduino.html) 
   * Stery kierunku:
-    * [DFRobot Gravity - moduł wiatraka z silnikiem DC 3-6V](https://botland.com.pl/pl/smigla/3559-dfrobot-gravity-modul-wiatraka-z-silnikiem-dc-3-6v.html)
+    * [DFRobot Gravity - moduł wiatraka z silnikiem DC 3-6V - BOTLAND](https://botland.com.pl/pl/smigla/3559-dfrobot-gravity-modul-wiatraka-z-silnikiem-dc-3-6v.html)
 * Łączność:
   * [Moduł Bluetooth HC-05 - ABC](https://abc-rc.pl/product-pol-6189-Bluetooth-HC-05-master-slave-modul-do-APM-i-AlexMos-Arduino.html)
   * [Konwerter poziomów logicznych -ABC](https://abc-rc.pl/product-pol-6191-Konwerter-poziomow-3-3-5V-4-kanaly-stanow-logicznych-SPI-UART-Arduino.html)
