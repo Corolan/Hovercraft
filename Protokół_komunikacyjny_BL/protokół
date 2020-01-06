@@ -1,0 +1,15 @@
+dane do wysłania:
+* skręt L/P
+jazda P/T + prędkość
+szperacz on/off
+pozycja szperacza
+reflektor on/off
+
+dane d odbioru:
+odczyt odległości HC-SR04
+odczyt krańcówek/IR
+poziom naładowania AKU ???
+
+<SL, SP, P, T, VPT, SZ, PSZ, RE>
+Przesyłać jako kilku bajtową liczbę?
+Wtedy trzeba będzie mądrze parsować
