@@ -36,6 +36,7 @@ bool RIGHT = false;
 bool STOP = false;
 bool SCOUT_ON = false;
 bool LIGHT_ON = false;
+bool ENGINES_ON = false;
 int SCOUT_POS = 0;
 int VELOCITY = 0;
 
@@ -44,26 +45,22 @@ int VELOCITY = 0;
 int dist_hcsr04 = 0;
 int aku_voltage = 4;
 
-int sensorsIR[] = {0,0};
-
-int obs_R = 1;
-int obs_L = 8;
-
+int sensorsIR[] = {0, 0};
 
 //---------------FUNKCE POMOCNICZE-------------------
 
 //---POMIAR ODLEGŁOŚCI---
-int distanceMeasure(){
+int distanceMeasure() {
   digitalWrite(pinTrig, LOW);
   delayMicroseconds(2);
   digitalWrite(pinTrig, HIGH);
   delayMicroseconds(10);
   digitalWrite(pinTrig, LOW);
-  return pulseIn(pinEcho, HIGH)/58;  
+  return pulseIn(pinEcho, HIGH) / 58;
 }
 
 //---POMIAR NAPIĘCIA---
-int voltageMeasure(){
+int voltageMeasure() {
   int measured_voltage = analogRead(VOLTAGE);
 
   measured_voltage = map(measured_voltage, 0, 1023, 0, 255);
@@ -71,75 +68,94 @@ int voltageMeasure(){
 }
 
 //---CZUJNIKI IR---
-int checkObstacles(int obstacles[], int number_of_IR_sensors){
-  obstacles[0]= 1;
-  obstacles[1]= 1;
+int checkObstacles(int obstacles[], int number_of_IR_sensors) {
+  obstacles[0] = 1;
+  obstacles[1] = 1;
 }
 
 //--------------------------PĘTLA GŁÓWNA---------------------------
 void loop() {
 
-//------------------------Odbieranie danych z aplikacji mobilnej--------------------------------------  
-  int dane_bufor = 0;
-  int data_received[9];
-  int data_received_size = 9;
+  //------------------------Odbieranie danych z aplikacji mobilnej--------------------------------------
+  byte dane_bufor = 0;
+  int data_received[4];
+  int data_received_size = 4;
   if (hc06.available() > 0) { //przesyłam dane partiami po 9 bajtów
-    Serial.print("REC: <");
-    for (int i = 0; i < data_received_size; i++) {
-     dane_bufor = hc06.read();
-     {
-        data_received[i] = dane_bufor;
-        Serial.print(data_received[i]);
-        if (i != data_received_size - 1) Serial.print("-");
+    dane_bufor = hc06.read();
+    if (dane_bufor == "<") {
+      //Serial.print("REC: <");
+      for (int i = 0; i < data_received_size; i++) {
+        dane_bufor = hc06.read();
+        {
+          data_received[i] = dane_bufor;
+          //Serial.print(data_received[i]);
+          //if (i != data_received_size - 1) Serial.print("-");
+        }
       }
     }
-    Serial.print("> ");
-    //Oberałem dane. Teraz sprawdzam, czy nie pojawia się tam "-1". Jeżeli tak, nie wpisuje tych danych to zmiennych, jeżeli nie, użyję odebranych danych
-    bool data_received_correct = true;
-    for (int i = 0; i < data_received_size; i++) {
-      if (data_received[i] == -1) data_received_correct = false;
-      if(i<7) if(data_received[i] > 1 ) data_received_correct = false;
+    //Serial.print("> ");
+    //Oberałem dane. Teraz sprawdzam sumę kontrolną. Jeżeli ok, wpisuje te dane to zmiennych.
+
+    bool data_received_correct = false;
+    int checksum = 0;
+    for (int i = 0; i < data_received_size-2; i++) {
+      checksum = checksum + data_received[i] % 10;
     }
-    //if () data_received_correct = false;
-    if (data_received[0] == 1 && data_received[1] == 1) data_received_correct = false;//jednoczesna jazda w przód i tył
-    if (data_received[3] == 1 && data_received[4] == 1) data_received_correct = false;//jednoczesna jazda w lewo i prawo
-    if (data_received[2] == 1 && (data_received[0] == 1 || data_received[1] == 1 || data_received[3] == 1 || data_received[4] == 1)) data_received_correct = false;//jednoczesna jazda w dowolnym kierunku i STOP
-    //Sprawdzanie zakończone  
-    if (data_received_correct == true){
-      FORWARD = data_received[0];
-      BACKWARDS = data_received[1];
-      STOP = data_received[2];  
-      LEFT = data_received[3];
-      RIGHT = data_received[4];
-      SCOUT_ON = data_received[5];
-      LIGHT_ON = data_received[6];
-      SCOUT_POS = data_received[7];
-      VELOCITY = data_received[8];
+    if (checksum == data_received[data_received_size-1]){
+      bool data_received_correct = true;
     }
+
+    //Sprawdzanie zakończone
+    if (data_received_correct == true) {
+      SCOUT_POS = data_received[1];
+      VELOCITY = data_received[2];     
+    //dekodowanie pierwzszego otrzymanego bitu
+      int to_decode = data_received[0];
+      int decoded_data_size = 8;
+      int decoded_data[decoded_data_size]; 
+
+      for (int i = 0; i < decoded_data_size; i++){
+        decoded_data[i]= to_decode % 2;
+        to_decode = to_decode/2;
+      }
+    
+      FORWARD = decoded_data[7];
+      BACKWARDS = decoded_data[6];
+      STOP = decoded_data[5];
+      LEFT = decoded_data[4];
+      RIGHT = decoded_data[3];
+      LIGHT_ON = decoded_data[2];
+      SCOUT_ON = decoded_data[1];
+      ENGINES_ON = decoded_data[0];
+
+    }
+    
     Serial.print("RCD: <");
-      Serial.print(FORWARD);
-      Serial.print("-");
-      Serial.print(BACKWARDS);
-      Serial.print("-");
-      Serial.print(STOP);
-      Serial.print("-");
-      Serial.print(LEFT);
-      Serial.print("-");
-      Serial.print(RIGHT);
-      Serial.print("-");
-      Serial.print(SCOUT_ON);
-      Serial.print("-");
-      Serial.print(LIGHT_ON);
-      Serial.print("-");
-      Serial.print(SCOUT_POS);
-      Serial.print("-");
-      Serial.print(VELOCITY);
+    Serial.print(FORWARD);
+    Serial.print("-");
+    Serial.print(BACKWARDS);
+    Serial.print("-");
+    Serial.print(STOP);
+    Serial.print("-");
+    Serial.print(LEFT);
+    Serial.print("-");
+    Serial.print(RIGHT);
+    Serial.print("-");
+    Serial.print(SCOUT_ON);
+    Serial.print("-");
+    Serial.print(LIGHT_ON);
+    Serial.print("-");
+    Serial.print(SCOUT_POS);
+    Serial.print("-");
+    Serial.print(VELOCITY);
+    Serial.print("-");
+    Serial.print(ENGINES_ON);
     Serial.print("> ");
   }
-//--------------DANE ODEBRANO----------------------------------
+  //--------------DANE ODEBRANO----------------------------------
 
 
-//---STEROWANIE---
+  //---STEROWANIE---
   if (FORWARD == 1 ) {
     digitalWrite(LED, HIGH);
   } else if (FORWARD == 0 ) {
@@ -155,28 +171,28 @@ void loop() {
     digitalWrite(LIGHT_LED, HIGH);
   } else if (LIGHT_ON == 0 ) {
     digitalWrite(LIGHT_LED, LOW);
-  }  
-//----------------------------WYSYŁANIE------------------------------------------------------
+  }
+  //----------------------------WYSYŁANIE------------------------------------------------------
 
-//Przygotowanie danych do wysłania
+  //Przygotowanie danych do wysłania
   dist_hcsr04 = distanceMeasure();
   aku_voltage = voltageMeasure();
   int checkObstacles(sensorsIR, 2);
-  //byte data_to_send[] = {dist_hcsr04, aku_voltage, sensorsIR[0], sensorsIR[1]};
-  byte data_to_send[] = {(byte)dist_hcsr04, (byte)aku_voltage, (byte)obs_R, (byte)obs_L};
+  byte data_to_send[] = {dist_hcsr04, aku_voltage, sensorsIR[0], sensorsIR[1]};
+  //byte data_to_send[] = {(byte)dist_hcsr04, (byte)aku_voltage, (byte)obs_R, (byte)obs_L};
   int data_to_send_size = 4;
 
-  
+
   //hc06.print(dist_hcsr04);
   if (hc06.availableForWrite() >= data_to_send_size) hc06.write(data_to_send, data_to_send_size);
   Serial.print("SND: <");
   for (int j = 0; j <  data_to_send_size; j++) {
-//    //hc06.write(data_to_send[j]);
+    //    //hc06.write(data_to_send[j]);
     Serial.print(data_to_send[j]);
-      //Serial.print(dist_hcsr04);
-    if (j != data_to_send_size-1) Serial.print("-");
+    //Serial.print(dist_hcsr04);
+    if (j != data_to_send_size - 1) Serial.print("-");
   }
   Serial.println(">");
-//--------------DANE WYSŁANO----------------------------------
+  //--------------DANE WYSŁANO----------------------------------
   delay(100);
 }
