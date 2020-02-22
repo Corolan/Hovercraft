@@ -82,9 +82,7 @@ void loop() {
 
 
   hc05.print('@'); //poczatek danych
-  //hc05.print('|');
   Serial.print('@'); //poczatek danych
-  //Serial.print('|');
   for (int i = 0; i < sizeof(data_to_send)/sizeof(data_to_send[0]); i++){
     //Serial.print(data_to_send[i]);
     Serial.print(data_to_send[i]);
