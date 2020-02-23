@@ -5,17 +5,38 @@
 SoftwareSerial hc05(5, 6); // RX, TX
 LiquidCrystal_I2C lcd(0x27, 16, 2); // set the LCD address to 0x27 for a 16 chars and 2 line display
 
-#define pinTrig 12//piny HC-SR04
-#define pinEcho 13//piny HC-SR04
-#define voltage A0//pin dzielnika napięcia
+#define pinTrig 12 //piny HC-SR04
+#define pinEcho 13 //piny HC-SR04
+#define voltage A0 //pin dzielnika napięcia
+#define pinObsL 3 //stan czujnika IR
+#define pinObsR 4 //stan czujnika IR
+#define pinObsL_R 9 //stan krańcówki
+#define pinObsR_R 10 //stan krańcówki
 
-#define pinObsL 3
-#define pinObsR 4
+// DEBUG
+bool DEBUG = true;
 
+// Dane wysyłane do APP
 int dist = 0;
 int volt = 0;
 int obsR = 0;
 int obsL = 0;
+int obsR_R = 0;
+int obsL_R = 0;
+
+// Dane odebrane z APP
+int received_data[11];
+int FORWARD = 0;
+int BACKWARD = 0;
+int STOP = 0;
+int LEFT = 0;
+int RIGHT = 0;
+int LIGHT = 0;
+int SCOUT = 0;
+byte SCOUT_PS = 0;
+byte VELOCITY = 0;
+int ENGINES = 0;
+byte CHECKSUM_REC = 0;
 
 //---POMIAR ODLEGŁOŚCI---OK!
 int distanceMeasure() {
@@ -31,27 +52,34 @@ int distanceMeasure() {
 }
 
 //---POMIAR NAPIĘCIA--- OK!
-int voltageMeasure(){
+int voltageMeasure() {
   int vol = analogRead(voltage);
   vol = map(vol, 0, 1023, 0, 255);
   return vol;
 }
 
 //---SPRAWDZENIE PRZESZKOD---
-void obstaclesCheck() {
+void obstaclesCheck() { // odczytanie stanu czujników IR
   if (digitalRead(pinObsL) == 0) {
     obsL = 1;
   } else obsL = 0;
-  
+
   if (digitalRead(pinObsR) == 0) {
     obsR = 1;
-  } else obsR = 0;  
+  } else obsR = 0;
+
+  if (digitalRead(pinObsL_R) == 0) {
+    obsL_R = 1;
+  } else obsL_R = 0;
+
+  if (digitalRead(pinObsR_R) == 0) {
+    obsR_R = 1;
+  } else obsR_R = 0;
 }
 
 
 
 void setup() {
-
 
   lcd.init(); // initialize the lcd
   lcd.backlight();
@@ -59,52 +87,75 @@ void setup() {
   lcd.setCursor(0, 1);
   lcd.print("Rozpoczynam");
   hc05.begin(9600);
-  hc05.print("Nawiązano połączenie");
-  Serial.begin(9600);
-  Serial.println("Nawiązano połączenie"); 
+  if (DEBUG == true) Serial.begin(9600);
   pinMode(pinTrig, OUTPUT);
   pinMode(pinEcho, INPUT);
   pinMode(pinObsL, INPUT);
   pinMode(pinObsL, INPUT);
-  //hc05.flush();
+  pinMode(pinObsL_R, INPUT_PULLUP);
+  pinMode(pinObsR_R, INPUT_PULLUP);
 }
-
-byte c = 0;
-
 
 void loop() {
   lcd.clear();
+//----ODBIERANIE DANYCH----
+  if ((hc05.available() > 0) && (hc05.read() == "@")) { // Czy dane są dostępne i czy zaczynają się od właściwego bajtu
+    bool received_data_correct = false;
+    for (int j = 0; j <= 11; j++) {
+      received_data[j] = hc05.read();
+    }
+    //Obliczam sumę kontrolną
+    for (int j = 0; j <= 11; j++) {
+      CHECKSUM_REC = CHECKSUM_REC + received_data[j];
+    }
+    CHECKSUM_REC = CHECKSUM_REC % 255;
+    if (CHECKSUM_REC == received_data[10]) received_data_correct = true;
+    if (received_data_correct == true) {
+      FORWARD = received_data[0];
+      BACKWARD = received_data[1];
+      STOP = received_data[2];
+      LEFT = received_data[3];
+      RIGHT = received_data[4];
+      LIGHT = received_data[5];
+      SCOUT = received_data[6];
+      SCOUT_PS = received_data[7];
+      VELOCITY = received_data[8];
+      ENGINES = received_data[9];
+      lcd.setCursor(0, 1);
+      lcd.print("OD:");
+      for (int j = 0; j <= 9; j++) {
+        lcd.print(received_data[j]);
+      }
+
+    }
+  }
+  //----DANE ODEBRANE----
+
+  //------STEROWANIE------
+  //------KONIEC STEROWANIA------
+
+  
+  //----WYSYŁANIE DANYCH----
+  // Przygotowanie danych do wysłania
   dist = distanceMeasure();
   volt = voltageMeasure();
   obstaclesCheck();
-  int checksum = (dist + volt + obsL + obsR)%255;
-  byte data_to_send[] = {dist, volt, obsL, obsR, checksum};
+  int checksum = (dist + volt + obsL + obsR + obsL_R + obsR_R) % 255;
+  byte data_to_send[] = {dist, volt, obsL, obsR, obsL_R, obsR_R, checksum};
 
 
   hc05.print('@'); //poczatek danych
-  //hc05.print('|');
-  Serial.print('@'); //poczatek danych
-  //Serial.print('|');
-  for (int i = 0; i < sizeof(data_to_send)/sizeof(data_to_send[0]); i++){
-    //Serial.print(data_to_send[i]);
-    Serial.print(data_to_send[i]);
-    //if (i != sizeof(data_to_send) - 1) {
-      Serial.print('|');  
-    //}  
+  if (DEBUG == true) Serial.print('@'); //poczatek danych
+  for (int i = 0; i < sizeof(data_to_send) / sizeof(data_to_send[0]); i++) {
+    if (DEBUG == true) {
+      Serial.print(data_to_send[i]);
+      Serial.print('|');
+    }
     hc05.print(data_to_send[i]);
-    //if (i != sizeof(data_to_send) - 1) {
-      hc05.print('|');
-    //}
+    hc05.print('|');
   }
-  Serial.println();
-  //hc05.write(data_to_send, sizeof(data_to_send)/sizeof(data_to_send[0]));
-  //Serial.println('@');
-  //hc05.println('@');//koniec danych
-  //Serial.write(data_to_send, sizeof(data_to_send));
-  //Serial.print("D: ");
-  //Serial.print(dist*(400.0/255.0));//TAKA FORMUŁE DO APP INVENTORA!!!
-  //Serial.print("--V: ");
-  //Serial.println(volt*5.0/255*2.72);//TAKA FORMUŁE DO APP INVENTORA!!! 2.72 wynika z zastosowanego dzielnika (8,1/3)
-  
-  delay(200);
+  if (DEBUG == true) Serial.println();
+  //----DANE WYSŁANE----
+
+  delay(100);
 }
