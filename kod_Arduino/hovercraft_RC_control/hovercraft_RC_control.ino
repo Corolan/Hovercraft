@@ -1,8 +1,12 @@
 #include <SoftwareSerial.h>
 #include <LiquidCrystal_I2C.h>
 #include <Wire.h>
+#include <AltSoftSerial.h>
 
-SoftwareSerial hc05(5, 6); // RX, TX
+
+//SoftwareSerial hc05(5, 6); // RX, TX
+AltSoftSerial hc05;
+
 LiquidCrystal_I2C lcd(0x27, 16, 2); // set the LCD address to 0x27 for a 16 chars and 2 line display
 
 #define pinTrig 12 //piny HC-SR04
@@ -10,11 +14,14 @@ LiquidCrystal_I2C lcd(0x27, 16, 2); // set the LCD address to 0x27 for a 16 char
 #define voltage A0 //pin dzielnika napięcia
 #define pinObsL 3 //stan czujnika IR
 #define pinObsR 4 //stan czujnika IR
-#define pinObsL_R 9 //stan krańcówki
-#define pinObsR_R 10 //stan krańcówki
+#define pinObsL_R 10 //stan krańcówki
+#define pinObsR_R 11 //stan krańcówki
+#define ledEngines A1
 
 // DEBUG
-bool DEBUG = true;
+bool DEBUG = false;
+int data = 0;
+int corr = 0;
 
 // Dane wysyłane do APP
 int dist = 0;
@@ -25,7 +32,10 @@ int obsR_R = 0;
 int obsL_R = 0;
 
 // Dane odebrane z APP
-int received_data[11];
+const int received_data_size = 12;
+int data_buffer = 0;
+int received_data[received_data_size];
+bool data_received_correct = false;
 int FORWARD = 0;
 int BACKWARD = 0;
 int STOP = 0;
@@ -77,65 +87,85 @@ void obstaclesCheck() { // odczytanie stanu czujników IR
   } else obsR_R = 0;
 }
 
-
+void enginesVertical(int state) {
+  if (state) {
+    digitalWrite(ledEngines, HIGH);
+  } else {
+    digitalWrite(ledEngines, LOW);
+  }
+}
 
 void setup() {
-
-  lcd.init(); // initialize the lcd
-  lcd.backlight();
-  lcd.print("---LCD on!---");
-  lcd.setCursor(0, 1);
-  lcd.print("Rozpoczynam");
+  if (DEBUG == true) {
+    lcd.init(); // initialize the lcd
+    lcd.backlight();
+    lcd.print("----!LCD on!----");
+    lcd.setCursor(0, 1);
+    lcd.print("--LET'S START!--");
+  }
   hc05.begin(9600);
   if (DEBUG == true) Serial.begin(9600);
   pinMode(pinTrig, OUTPUT);
+  pinMode(ledEngines, OUTPUT);//DEBUG
+  digitalWrite(ledEngines, LOW);
   pinMode(pinEcho, INPUT);
   pinMode(pinObsL, INPUT);
   pinMode(pinObsL, INPUT);
   pinMode(pinObsL_R, INPUT_PULLUP);
   pinMode(pinObsR_R, INPUT_PULLUP);
+  
 }
 
 void loop() {
-  lcd.clear();
-//----ODBIERANIE DANYCH----
-  if ((hc05.available() > 0) && (hc05.read() == "@")) { // Czy dane są dostępne i czy zaczynają się od właściwego bajtu
-    bool received_data_correct = false;
-    for (int j = 0; j <= 11; j++) {
-      received_data[j] = hc05.read();
-    }
-    //Obliczam sumę kontrolną
-    for (int j = 0; j <= 11; j++) {
-      CHECKSUM_REC = CHECKSUM_REC + received_data[j];
-    }
-    CHECKSUM_REC = CHECKSUM_REC % 255;
-    if (CHECKSUM_REC == received_data[10]) received_data_correct = true;
-    if (received_data_correct == true) {
-      FORWARD = received_data[0];
-      BACKWARD = received_data[1];
-      STOP = received_data[2];
-      LEFT = received_data[3];
-      RIGHT = received_data[4];
-      LIGHT = received_data[5];
-      SCOUT = received_data[6];
-      SCOUT_PS = received_data[7];
-      VELOCITY = received_data[8];
-      ENGINES = received_data[9];
-      lcd.setCursor(0, 1);
-      lcd.print("OD:");
-      for (int j = 0; j <= 9; j++) {
-        lcd.print(received_data[j]);
+  if (DEBUG == true) lcd.clear();
+  //----ODBIERANIE DANYCH----
+  data_received_correct = false;
+  if (hc05.available() >= received_data_size) {
+    if (hc05.read() == '@' ) {
+      //lcd.clear(); lcd.setCursor(0, 0); lcd.print("--DATA AVA--");
+      for (int j = 0; j < received_data_size; j++) {
+        received_data[j] = hc05.read();
       }
-
+    } 
+    if (received_data[received_data_size - 1] == '#') {
+      data_received_correct = true;
     }
   }
+  if (data_received_correct) {
+    FORWARD = received_data[0];
+    BACKWARD = received_data[1];
+    STOP = received_data[2];
+    LEFT = received_data[3];
+    RIGHT = received_data[4];
+    LIGHT = received_data[5];
+    SCOUT = received_data[6];
+    SCOUT_PS = received_data[7];
+    VELOCITY = received_data[8];
+    ENGINES = received_data[9];
+
+    if (DEBUG) {
+      Serial.print("@@");
+      for (int j = 0; j < received_data_size - 1; j++) {
+        Serial.print(received_data[j]);
+        Serial.print("|");
+      }
+      Serial.println();
+    }
+  }
+
   //----DANE ODEBRANE----
 
   //------STEROWANIE------
+  if (ENGINES) {
+    enginesVertical(1);
+  } else {
+    enginesVertical(0);
+  }
+  
   //------KONIEC STEROWANIA------
 
-  
-  //----WYSYŁANIE DANYCH----
+
+  //-------------------------------------------------------------WYSYŁANIE DANYCH----------------------------------------------------------------
   // Przygotowanie danych do wysłania
   dist = distanceMeasure();
   volt = voltageMeasure();
@@ -157,5 +187,5 @@ void loop() {
   if (DEBUG == true) Serial.println();
   //----DANE WYSŁANE----
 
-  delay(100);
+  delay(10);
 }
