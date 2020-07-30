@@ -50,6 +50,7 @@ byte CHECKSUM_REC = 0;
 
 //---POMIAR ODLEGŁOŚCI---OK!
 int distanceMeasure() {
+  //delay(50);//aby zapobiec interferencjom z poprzednich pomiarów
   digitalWrite(pinTrig, LOW);
   delayMicroseconds(2);
   digitalWrite(pinTrig, HIGH);
