@@ -129,7 +129,7 @@ void loop() {
       }
     } 
     if (received_data[received_data_size - 1] == '#') {
-      data_received_correct = true;
+      data_received_correct = true; // zaimplementować sumę kontrolną - zaokrąglać do int'a
     }
   }
   if (data_received_correct) {
