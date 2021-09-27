@@ -1,4 +1,4 @@
-# MGR
+# Poduszkowiec
 
 ## Pomysły i uwagi
 * Pojazd na poduszcze powietrznej
