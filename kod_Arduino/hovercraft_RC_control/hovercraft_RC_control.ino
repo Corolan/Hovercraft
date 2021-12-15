@@ -4,25 +4,17 @@
 #include <AltSoftSerial.h>
 
 //wyrzucić wszystko poza łącznością
+//najpierw zając się obsługą silników!
 
 //SoftwareSerial hc05(5, 6); // RX, TX
 AltSoftSerial hc05;
 
-LiquidCrystal_I2C lcd(0x27, 16, 2); // set the LCD address to 0x27 for a 16 chars and 2 line display
+LiquidCrystal_I2C lcd(0x27, 16, 4); // set the LCD address to 0x27 for a 16 chars and 2 line display -- zmienić na wywitlacz 16/4
 
-#define pinTrig 12 //piny HC-SR04
-#define pinEcho 13 //piny HC-SR04
-#define voltage A0 //pin dzielnika napięcia
-#define pinObsL 3 //stan czujnika IR
-#define pinObsR 4 //stan czujnika IR
-#define pinObsL_R 10 //stan krańcówki
-#define pinObsR_R 11 //stan krańcówki
-#define ledEngines A1
+
 
 // DEBUG
 bool DEBUG = false;
-int data = 0;
-int corr = 0;
 
 // Dane wysyłane do APP
 int dist = 0;
@@ -49,53 +41,7 @@ byte VELOCITY = 0;
 int ENGINES = 0;
 byte CHECKSUM_REC = 0;
 
-//---POMIAR ODLEGŁOŚCI---OK!
-int distanceMeasure() {
-  //delay(50);//aby zapobiec interferencjom z poprzednich pomiarów
-  digitalWrite(pinTrig, LOW);
-  delayMicroseconds(2);
-  digitalWrite(pinTrig, HIGH);
-  delayMicroseconds(10);
-  digitalWrite(pinTrig, LOW);
-  int distance = pulseIn(pinEcho, HIGH) / 58;
-  if (distance > 400) distance = 400;
-  distance = map(distance, 0, 400, 0, 255);
-  return distance;
-}
 
-//---POMIAR NAPIĘCIA--- OK!
-int voltageMeasure() {
-  int vol = analogRead(voltage);
-  vol = map(vol, 0, 1023, 0, 255);
-  return vol;
-}
-
-//---SPRAWDZENIE PRZESZKOD---
-void obstaclesCheck() { // odczytanie stanu czujników IR
-  if (digitalRead(pinObsL) == 0) {
-    obsL = 1;
-  } else obsL = 0;
-
-  if (digitalRead(pinObsR) == 0) {
-    obsR = 1;
-  } else obsR = 0;
-
-  if (digitalRead(pinObsL_R) == 0) {
-    obsL_R = 1;
-  } else obsL_R = 0;
-
-  if (digitalRead(pinObsR_R) == 0) {
-    obsR_R = 1;
-  } else obsR_R = 0;
-}
-
-void enginesVertical(int state) {
-  if (state) {
-    digitalWrite(ledEngines, HIGH);
-  } else {
-    digitalWrite(ledEngines, LOW);
-  }
-}
 
 void setup() {
   if (DEBUG == true) {
@@ -104,22 +50,13 @@ void setup() {
     lcd.print("----!LCD on!----");
     lcd.setCursor(0, 1);
     lcd.print("--LET'S START!--");
+    Serial.begin(9600);
   }
-  hc05.begin(9600);
-  if (DEBUG == true) Serial.begin(9600);
-  pinMode(pinTrig, OUTPUT);
-  pinMode(ledEngines, OUTPUT);//DEBUG
-  digitalWrite(ledEngines, LOW);
-  pinMode(pinEcho, INPUT);
-  pinMode(pinObsL, INPUT);
-  pinMode(pinObsL, INPUT);
-  pinMode(pinObsL_R, INPUT_PULLUP);
-  pinMode(pinObsR_R, INPUT_PULLUP);
-  
+  hc05.begin(9600);//co jeśli nie wystartuje?
 }
 
 void loop() {
-  if (DEBUG == true) lcd.clear();
+  if (DEBUG == true ) lcd.clear();
   //----ODBIERANIE DANYCH----
   data_received_correct = false;
   if (hc05.available() >= received_data_size) {
@@ -158,20 +95,13 @@ void loop() {
   //----DANE ODEBRANE----
 
   //------STEROWANIE------
-  if (ENGINES) {
-    enginesVertical(1);
-  } else {
-    enginesVertical(0);
-  }
   
   //------KONIEC STEROWANIA------
 
 
   //-------------------------------------------------------------WYSYŁANIE DANYCH----------------------------------------------------------------
   // Przygotowanie danych do wysłania
-  dist = distanceMeasure();
-  volt = voltageMeasure();
-  obstaclesCheck();
+
   int checksum = (dist + volt + obsL + obsR + obsL_R + obsR_R) % 255;
   byte data_to_send[] = {dist, volt, obsL, obsR, obsL_R, obsR_R, checksum};
 
