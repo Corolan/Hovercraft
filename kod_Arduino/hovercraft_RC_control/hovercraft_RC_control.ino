@@ -3,6 +3,7 @@
 #include <Wire.h>
 #include <AltSoftSerial.h>
 
+//wyrzucić wszystko poza łącznością
 
 //SoftwareSerial hc05(5, 6); // RX, TX
 AltSoftSerial hc05;
