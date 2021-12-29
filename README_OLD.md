@@ -1,7 +1,5 @@
 # Poduszkowiec
 
-# Wszystko do weryfikacji
-
 ## Pomysły i uwagi
 * Pojazd na poduszcze powietrznej
   * Dwa poziomy: pokład głownu i podpokład z elektroniką - ciąg powietrza zapewni chłodzenie
