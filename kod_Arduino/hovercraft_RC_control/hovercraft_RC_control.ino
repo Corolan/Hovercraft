@@ -17,6 +17,7 @@ float ps_voltage{0};//power supply voltage
 
 // DEBUG
 bool DEBUG = true;
+byte test_variable{0};
 
 //deklaracje zmiennych sterujących
 bool LED_REFLEKTOR{false};
@@ -38,6 +39,7 @@ void setup() {
 }
 
 void loop() {
+  //pobieranie rozkazów z aplikacji
   if ( hc05.available() < received_data_size) { //oczekuje na rozkazy z aplikacji
     lcd.clear(); lcd.setCursor(0, 0); lcd.print("No data");
   } else { //pojawiły się rozkazy!
@@ -66,7 +68,16 @@ void loop() {
   ps_voltage = read_voltage();
 
   //Wysyłanie danych do aplikacji
-  data_to_send[1] = ps_voltage
+  data_to_send[0] = '@';
+  data_to_send[to_send_data_size + 1] = '#';
+  //data_to_send[1] = ps_voltage
+  data_to_send[1] = test_variable; test_variable++;
+
+  for (int j{0}; j < to_send_data_size + 2; j++) {
+    hc05.print(data_to_send[j]);
+  }
+
+  
   
   
   //czy delay konieczny?
@@ -74,10 +85,10 @@ void loop() {
 }
 
 float read_voltage(){
-  //po odjeciu lcd przerobićto na pojedynczy return
+  //po odjeciu lcd przerobić to na pojedynczy return
   float voltage = analogRead(A0)*5/1023.0;//przeliczenie na wolty
   lcd.setCursor(15, 0); lcd.print(voltage);
-  return voltage;
+  return voltage*5; // czynnik "5" wynika z zastosowanego dzielnika napięcia
 }
 
 void headlight_LED(bool state) {
