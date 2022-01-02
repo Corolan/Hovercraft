@@ -10,10 +10,11 @@ const int received_data_size {1}; //jak na razie przesyłam jeden bajt użyteczn
 int received_data[received_data_size + 2]; //"+2" - dochodzą znaki początku i końca ramki
 
 const int to_send_data_size{1};//jak na razie przesyłam jeden bajt użytecznych danych
-int data_to_send[to_send_data_size + 2];//"+2" - dochodzą znaki początku i końca ramki
+int data_to_send[to_send_data_size + 3];//"+3" - dochodzą znaki początku i końca ramki oraz suma kontrolna
+int checksum{0}; // policzyć sumę kontrolną
 
 //pin A0 - odczyt napięcia zasilania
-float ps_voltage{0};//power supply voltage
+byte ps_voltage{0};//power supply voltage
 
 // DEBUG
 bool DEBUG = true;
@@ -21,6 +22,9 @@ byte test_variable{0};
 
 //deklaracje zmiennych sterujących
 bool LED_REFLEKTOR{false};
+
+//deklaracje funkcji
+byte read_voltage();
 
 void headlight_LED(bool state);
 
@@ -41,6 +45,7 @@ void setup() {
 void loop() {
   //pobieranie rozkazów z aplikacji
   if ( hc05.available() < received_data_size) { //oczekuje na rozkazy z aplikacji
+    //jeżeli brak rozkazów -- wyłączyć silniki!!!!
     lcd.clear(); lcd.setCursor(0, 0); lcd.print("No data");
   } else { //pojawiły się rozkazy!
     lcd.clear(); lcd.setCursor(0, 0); lcd.print("Data arrived");
@@ -65,13 +70,15 @@ void loop() {
 
   //Przygotowanie danych do wysłania
   //1. pomiar napięcia zasilania
-  ps_voltage = read_voltage();
+  //ps_voltage = read_voltage();
 
   //Wysyłanie danych do aplikacji
-  data_to_send[0] = '@';
-  data_to_send[to_send_data_size + 1] = '#';
+  data_to_send[0] = 64; //'@';
+  data_to_send[to_send_data_size + 1] = checksum; 
+  data_to_send[to_send_data_size + 2] = 35; //'#';
   //data_to_send[1] = ps_voltage
-  data_to_send[1] = test_variable; test_variable++;
+  data_to_send[1] = read_voltage();
+  //data_to_send[1] = test_variable; test_variable++;
 
   for (int j{0}; j < to_send_data_size + 2; j++) {
     hc05.print(data_to_send[j]);
@@ -81,14 +88,15 @@ void loop() {
   
   
   //czy delay konieczny?
-  delay(100);
+  delay(200);
 }
 
-float read_voltage(){
+byte read_voltage(){
   //po odjeciu lcd przerobić to na pojedynczy return
-  float voltage = analogRead(A0)*5/1023.0;//przeliczenie na wolty
+  //float voltage = analogRead(A0)*5/1023.0;//przeliczenie na wolty
+  byte voltage = analogRead(A0)/4;//
   lcd.setCursor(15, 0); lcd.print(voltage);
-  return voltage*5; // czynnik "5" wynika z zastosowanego dzielnika napięcia
+  return voltage; // czynnik "5" wynika z zastosowanego dzielnika napięcia
 }
 
 void headlight_LED(bool state) {
