@@ -7,7 +7,7 @@ AltSoftSerial hc05;
 LiquidCrystal_I2C lcd(0x27, 20, 4); // set the LCD address to 0x27 for a 16 chars and 4 line display -- zmienić na wyswietlacz 16/4
 
 const int received_data_size {1}; //jak na razie przesyłam jeden bajt użytecznych danych
-int received_data[received_data_size + 2]; //"+2" - dochodzą znaki początku i końca ramki
+int received_data[received_data_size + 3]; //"+2" - dochodzą znaki początku i końca ramki oraz checksuma
 
 const int to_send_data_size{1};//jak na razie przesyłam jeden bajt użytecznych danych
 int data_to_send[to_send_data_size + 3];//"+3" - dochodzą znaki początku i końca ramki oraz suma kontrolna
@@ -48,15 +48,16 @@ void loop() {
     //jeżeli brak rozkazów -- wyłączyć silniki!!!!
     lcd.clear(); lcd.setCursor(0, 0); lcd.print("No data");
   } else { //pojawiły się rozkazy!
-    lcd.clear(); lcd.setCursor(0, 0); lcd.print("Data arrived");
-    lcd.setCursor(0, 1);
+    
+    lcd.clear(); lcd.setCursor(0, 0);
     int i{0};
     while ( hc05.available() > 0) {
+      
       received_data[i] = hc05.read();
       lcd.print(received_data[i]); lcd.print("-");
       i++;
     }
-    if (received_data[0] == 64 && received_data[received_data_size + 1] == 35) { // Sprawdzenie kompletności odebranych danych, '@'=64, '#'=35
+    if (received_data[0] == 64 && received_data[received_data_size + 2] == 35) { // Sprawdzenie kompletności odebranych danych, '@'=64, '#'=35
       //pełna ramka odebrana, tutaj będzie procesowanie rozkazów
       lcd.setCursor(0, 3); lcd.print("Data detected");
       lcd.setCursor(0, 2); lcd.print(received_data[1]);
@@ -65,7 +66,7 @@ void loop() {
 
   }
 
-  //Wyonanie rozkazów na podstawie otrzymanych danych
+  //Wykonanie rozkazów na podstawie otrzymanych danych
   headlight_LED(LED_REFLEKTOR);
 
   //Przygotowanie danych do wysłania
@@ -73,6 +74,7 @@ void loop() {
   //ps_voltage = read_voltage();
 
   //Wysyłanie danych do aplikacji
+  checksum = 0; //jaki algorym?
   data_to_send[0] = 64; //'@';
   data_to_send[to_send_data_size + 1] = checksum; 
   data_to_send[to_send_data_size + 2] = 35; //'#';
@@ -80,8 +82,13 @@ void loop() {
   data_to_send[1] = read_voltage();
   //data_to_send[1] = test_variable; test_variable++;
 
-  for (int j{0}; j < to_send_data_size + 2; j++) {
+  for (int j{0}; j < to_send_data_size + 3; j++) {//"+3" bo checksum-a
     hc05.print(data_to_send[j]);
+    hc05.print('|');
+    Serial.println(data_to_send[j]);
+    Serial.println('|');
+    
+    
   }
 
   
