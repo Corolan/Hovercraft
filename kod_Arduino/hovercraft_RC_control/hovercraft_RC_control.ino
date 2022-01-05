@@ -9,22 +9,28 @@ LiquidCrystal_I2C lcd(0x27, 20, 4); // set the LCD address to 0x27 for a 16 char
 const int received_data_size {1}; //jak na razie przesyłam jeden bajt użytecznych danych
 int received_data[received_data_size + 3]; //"+2" - dochodzą znaki początku i końca ramki oraz checksuma
 
-const int to_send_data_size{1};//jak na razie przesyłam jeden bajt użytecznych danych
+const int to_send_data_size{3};
 int data_to_send[to_send_data_size + 3];//"+3" - dochodzą znaki początku i końca ramki oraz suma kontrolna
 int checksum{0}; // policzyć sumę kontrolną
 
-//pin A0 - odczyt napięcia zasilania
+#define LED_VOLTAGE A0//pin A0 - odczyt napięcia zasilania
+#define OBSTCL_LEFT 2
+#define OBSTCL_RIGHT 3
+
 int ps_voltage{0};//power supply voltage
 
 // DEBUG
 bool DEBUG = true;
 byte test_variable{0};
 
-//deklaracje zmiennych sterujących
+//deklaracje zmiennych 
 bool LED_REFLEKTOR{false};
+byte obstacle_left{0};
+byte obstacle_right{0};
 
 //deklaracje funkcji
 int read_voltage();
+void check_obstacles();
 
 void headlight_LED(bool state);
 
@@ -40,6 +46,8 @@ void setup() {
     pinMode(13, OUTPUT); digitalWrite(13, LOW); //DEBUG
   }
   hc05.begin(9600);
+  pinMode(OBSTCL_LEFT, INPUT);
+  pinMode(OBSTCL_RIGHT, INPUT);
 }
 
 void loop() {
@@ -73,25 +81,31 @@ void loop() {
 
   //Wysyłanie danych do aplikacji --- czy przenieść to do sekcji w drugim if-ie? Tak żeby próba nadania danych następowala tylko gdy po drugiej stronie jest aplikacja 
   checksum = 0; //jaki algorym?
+
+  check_obstacles();
+  
   data_to_send[0] = 64; //'@';
   data_to_send[to_send_data_size + 1] = checksum; 
   data_to_send[to_send_data_size + 2] = 35; //'#';
   //Przygotowanie danych do wysłania
   data_to_send[1] = read_voltage();//1. pomiar napięcia zasilania
-  //data_to_send[1] = test_variable; test_variable++;
+  data_to_send[2] = obstacle_left;
+  data_to_send[3] = obstacle_right;
 
   for (int j{0}; j < to_send_data_size + 3; j++) {//"+3" bo checksum-a
     hc05.write(data_to_send[j]);
+    //Serial.print(data_to_send[j]);
+    //Serial.print("|");
   }
-
+  //Serial.println();
   //czy delay konieczny? zamienić go na millis?
   delay(200);
 }
 
 int read_voltage(){
   //po odjeciu lcd przerobić to na pojedynczy return
-  //float voltage = analogRead(A0)*5/1023.0;//przeliczenie na wolty
-  int voltage = analogRead(A0);//
+  //float voltage = analogRead(LED_VOLTAGE)*5/1023.0;//przeliczenie na wolty
+  int voltage = analogRead(LED_VOLTAGE);//
   lcd.setCursor(15, 0); lcd.print(voltage/4);
   return voltage/4; // czynnik "4" wynika z tego, że muszę zmieścić się w jednym bajcie
 }
@@ -101,5 +115,18 @@ void headlight_LED(bool state) { //dodać definicję pinu headlight
     digitalWrite(11, HIGH);
   } else {
     digitalWrite(11, LOW);
+  }
+}
+
+void check_obstacles() {
+  if (digitalRead(OBSTCL_LEFT) == LOW) {
+    obstacle_left = 1;
+  } else {
+    obstacle_left = 0;
+  }
+  if (digitalRead(OBSTCL_RIGHT) == LOW) {
+    obstacle_right = 1;
+  } else {
+    obstacle_right = 0;
   }
 }
