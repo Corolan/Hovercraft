@@ -6,7 +6,7 @@
 AltSoftSerial hc05;
 LiquidCrystal_I2C lcd(0x27, 20, 4); // set the LCD address to 0x27 for a 16 chars and 4 line display -- zmienić na wyswietlacz 16/4
 
-const int received_data_size {1}; //jak na razie przesyłam jeden bajt użytecznych danych
+const int received_data_size {2}; //jak na razie przesyłam jeden bajt użytecznych danych
 int received_data[received_data_size + 3]; //"+2" - dochodzą znaki początku i końca ramki oraz checksuma
 
 const int to_send_data_size{3};
@@ -14,8 +14,10 @@ int data_to_send[to_send_data_size + 3];//"+3" - dochodzą znaki początku i ko�
 int checksum{0}; // policzyć sumę kontrolną
 
 #define LED_VOLTAGE A0//pin A0 - odczyt napięcia zasilania
-#define OBSTCL_LEFT 2
-#define OBSTCL_RIGHT 3
+#define OBSTCL_LEFT 3
+#define OBSTCL_RIGHT 2
+#define ENG_VERTICAL 4 //silnik pionowy ( dmchaw[a/y] )
+//silnik pin 4
 
 int ps_voltage{0};//power supply voltage
 
@@ -27,12 +29,14 @@ byte test_variable{0};
 bool LED_REFLEKTOR{false};
 byte obstacle_left{0};
 byte obstacle_right{0};
+bool vertical_engine{0};
 
 //deklaracje funkcji
 int read_voltage();
 void check_obstacles();
 
 void headlight_LED(bool state);
+void control_vertical_engines(bool state);
 
 void setup() {
   if (DEBUG == true) {
@@ -48,12 +52,14 @@ void setup() {
   hc05.begin(9600);
   pinMode(OBSTCL_LEFT, INPUT);
   pinMode(OBSTCL_RIGHT, INPUT);
+  pinMode(ENG_VERTICAL, OUTPUT); digitalWrite(ENG_VERTICAL, LOW);
 }
 
 void loop() {
   //pobieranie rozkazów z aplikacji
   if ( hc05.available() < received_data_size) { //oczekuje na rozkazy z aplikacji
     //jeżeli brak rozkazów -- wyłączyć silniki!!!!
+    digitalWrite(ENG_VERTICAL, LOW);
     lcd.clear(); lcd.setCursor(0, 0); lcd.print("No data");
   } else { //pojawiły się rozkazy!
     
@@ -71,12 +77,13 @@ void loop() {
       lcd.setCursor(0, 3); lcd.print("Data detected");
       lcd.setCursor(0, 2); lcd.print(received_data[1]);
       LED_REFLEKTOR = received_data[1];
+      vertical_engine = received_data[2];
     }
   }
 
   //Wykonanie rozkazów na podstawie otrzymanych danych
   headlight_LED(LED_REFLEKTOR);
-
+  control_vertical_engines(vertical_engine);
 
 
   //Wysyłanie danych do aplikacji --- czy przenieść to do sekcji w drugim if-ie? Tak żeby próba nadania danych następowala tylko gdy po drugiej stronie jest aplikacja 
@@ -128,5 +135,14 @@ void check_obstacles() {
     obstacle_right = 1;
   } else {
     obstacle_right = 0;
+  }
+}
+
+void control_vertical_engines(bool state){
+  if (state == true) {
+    digitalWrite(ENG_VERTICAL, HIGH);
+  }
+  else if (state == false) {
+    digitalWrite(ENG_VERTICAL, LOW);
   }
 }
