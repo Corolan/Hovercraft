@@ -1,0 +1,19 @@
+APP->ARDUINO
+kieunek ruchu -- enum{1,2,3,4}
+reflektor -- enum{0,1}
+położenie serwa reflektora -- {0-255}
+dmuchawy -- enum{0,1}
+
+ARDUINO->APP
+napięcie zasilania -- {0-255}
+wykrycie przeszkody L&P -- enum{o,1,2,3}
+odległość przeszkody przód -- {0-255}
+zarezerowane --
+zarezerowane --
+
+
+wykrycie przeszkody L&P
+0 - brak przeszkody
+1 - wykryto L
+2 - wykryto P
+3 - wykryto L&P
