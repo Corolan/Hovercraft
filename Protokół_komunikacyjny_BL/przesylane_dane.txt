@@ -6,7 +6,8 @@ dmuchawy -- enum{0,1}
 
 ARDUINO->APP
 napięcie zasilania -- {0-255}
-wykrycie przeszkody L&P -- enum{o,1,2,3}
+wykrycie przeszkody L -- enum{o,1}
+wykrycie przeszkody P -- enum{o,1}
 odległość przeszkody przód -- {0-255}
 zarezerowane --
 zarezerowane --
