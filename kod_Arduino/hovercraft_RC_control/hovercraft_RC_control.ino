@@ -30,6 +30,8 @@ int checksum_send{0};
 bool LED_REFLEKTOR{false};
 bool vertical_engine{false};
 
+int testvar{0};
+
 //deklaracje funkcji
 int read_voltage();
 int check_obstacles(int pin);
@@ -59,10 +61,13 @@ void setup() {
   lcd.setCursor(0, 0); lcd.print(F("Start_123"));
 }
 
-void loop() {
+void loop() { //---------------------------------------------------Pętla główna ------------------------------
   prepare_data_to_send();
   show_data_to_send();
   send_data_to_phone();
+  if (read_data_from_phone()== 0) {
+    delay(1); //wykonaj rozkazy na podstawie odebranych danych jeśli  dane poprawn
+  }
   //headlight_servo.write(255);
   delay(200);
 
@@ -142,7 +147,7 @@ void show_data_to_send(){
   lcd.setCursor(0, 2);
   lcd.print("R1: "); lcd.print(data_to_send[5]); lcd.print(" R2: "); lcd.print(data_to_send[6]);
   lcd.setCursor(0, 3);
-  lcd.print("CSM: "); lcd.print(data_to_send[data_to_send_size + 1]);
+  lcd.print("CSM: "); lcd.print(data_to_send[data_to_send_size + 1]);lcd.print(" TV: "); lcd.print(testvar++);
   
 }
 
@@ -151,11 +156,16 @@ void send_data_to_phone(){
   hc05.write("$"); //ascii 36
   if(hc05.available() > 0){
     if (hc05.read() == "!") { //ascii 33
+      hc05.write("@"); //początek ramki 
         for (int j{0}; j < data_to_send_size + 3; j++) {//"+3" bo checksum-a
-      hc05.write(data_to_send[j]);
-    }
+          hc05.write(data_to_send[j]);
+        }
     }
   }
+}
+
+int read_data_from_phone(){
+  return 0;
 }
 /*
 void loop() {
