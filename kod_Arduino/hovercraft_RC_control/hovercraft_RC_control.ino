@@ -29,6 +29,7 @@ int checksum_send{0};
 //deklaracje zmiennych
 bool LED_REFLEKTOR{false};
 bool vertical_engine{false};
+char dumpChar;
 
 int testvar{0};
 
@@ -153,9 +154,13 @@ void show_data_to_send(){
 
 void send_data_to_phone(){
 
+//  while (hc05.available() > 0) {
+//    dumpChar = Serial.read();
+//  }  
   hc05.write("$"); //ascii 36
+  while(hc05.available() == 0) {} //czekam na odpowiedź telefonu
   if(hc05.available() > 0){
-    if (hc05.read() == "!") { //ascii 33
+    if (hc05.read() == 33) { //ascii 33 "!"
       hc05.write("@"); //początek ramki 
         for (int j{0}; j < data_to_send_size + 3; j++) {//"+3" bo checksum-a
           hc05.write(data_to_send[j]);
